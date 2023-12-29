@@ -1,0 +1,715 @@
+ @media (max-width: 1500px) {
+     .banner_logolist ul li {
+         margin: 0 15px;
+         width: 120px;
+     }
+     .ourwork_searchreasult_list ul li {
+         height: calc(100vw * .5 * .32);
+     }
+     .ourwork_searchreasult_list ul li:nth-child(1) {
+         height: calc(100vw * 0.32);
+     }
+     .aboutus_banner_info {
+         padding: 150px 0 !important;
+     }
+ }
+ 
+ @media (max-width: 1400px) {
+     .aboutus_banner_info {
+         padding: 100px 0 !important;
+     }
+     .parent-pageid-372 .pharmavideo_banner .tp-parallax-wrap:last-child,
+     .home .pharmavideo_banner .tp-parallax-wrap:last-child {
+         bottom: 85px !important;
+     }
+ }
+ 
+ @media (max-width: 1200px) {
+     .container,
+     .container_info,
+     .et_pb_row {
+         padding-right: 20px !important;
+         padding-left: 20px !important;
+     }
+     .footer_logo {
+         left: 20px;
+     }
+     .individualcasestudy_down_cont {
+         padding: 20px 0;
+     }
+     .individualcasestudy_down_cont .email_form {
+         right: 20px;
+     }
+ }
+ 
+ @media (max-width: 1100px) {
+     .parent-pageid-372 .pharmavideo_banner .tp-parallax-wrap:last-child,
+     .home .pharmavideo_banner .tp-parallax-wrap:last-child {
+         bottom: 75px !important;
+     }
+     .banner_logolist ul li {
+         width: 100px;
+         margin: 0 10px;
+     }
+     .industries_listinner .industries_listcont {
+         font-size: 16px;
+     }
+     .ourwork_searchreasult_list ul li {
+         height: calc(100vw * .5 * .45);
+     }
+     .ourwork_searchreasult_list ul li:nth-child(1) {
+         height: calc(100vw * 0.45);
+     }
+     .ourwork_searchreasult_list ul li:nth-child(1) .ourwork_searchreasult_cont h5 {
+         font-size: 20px;
+     }
+     .ourwork_searchreasult_list ul li .ourwork_searchreasult_cont p {
+         font-size: 10px;
+     }
+     #footer-widgets .footer-widget .footer_contact ul li {
+         margin: 0 2px 0 0;
+     }
+     .ourwork_searchreasult_list ul li .ourwork_searchreasult_cont .download_arrow_form {
+         width: 350px !important;
+         height: 120px !important;
+         top: -130px;
+         left: -410px;
+     }
+     .btn-download {
+         margin: 0;
+     }
+     .ourwork_searchreasult_list ul li:nth-child(1) .download_arrow_form {
+         top: -220px !important;
+         left: -210px !important;
+     }
+     .social_email_info {
+         top: 10px;
+     }
+     .social_email_info .social_list {
+         padding: 5px;
+     }
+     .social_email_info .social_list a {
+         width: 30px;
+     }
+     .aboutus_banner_info h3 {
+         font-size: 30px;
+     }
+     .block_data h5 {
+         min-height: 55px;
+         font-size: 16px;
+     }
+     .block_data p {
+         min-height: 75px;
+     }
+     .ecommerce_alpha_info h4,
+     .pharma_alpha_info h4 {
+         padding: 0px 0 20px 0;
+         min-height: inherit;
+     }
+ }
+ 
+ @media (max-width: 980px) {
+     .et_header_style_left #logo,
+     .et_header_style_split #logo {
+         max-width: 100%;
+     }
+     .et_header_style_split .mobile_menu_bar,
+     .et_header_style_left .mobile_menu_bar {
+         padding-bottom: 20px;
+     }
+     .et_mobile_menu {
+         padding: 0;
+         border-top: 3px solid #6caee0;
+     }
+     .et_mobile_menu li {
+         padding: 0;
+         font-size: 16px;
+         font-family: 'open_sansregular';
+         color: #000;
+     }
+     .et_mobile_menu li a {
+         font-size: 16px;
+         font-family: 'open_sansregular';
+         color: #000;
+         font-weight: normal;
+         transition: all ease 0.5s;
+         -webkit-transition: all ease 0.5s;
+         -moz-transition: all ease 0.5s;
+         padding: 10px 20px;
+     }
+     .et_mobile_menu li ul li a {
+         padding: 10px 20px 10px 40px;
+     }
+     .pharma_bannercont h4,
+     .pharma_bannercont h1 {
+         font-size: 26px !important;
+     }
+     .pharma_bannercont p {
+         font-size: 12px !important;
+     }
+     .parent-pageid-372 .pharmavideo_banner .tp-parallax-wrap:last-child,
+     .home .pharmavideo_banner .tp-parallax-wrap:last-child {
+         bottom: 59px !important;
+     }
+     .pharmavideo_bannercont h4 {
+         font-size: 20px !important;
+     }
+     .banner_logolist ul li {
+         width: 70px;
+         margin: 0 5px;
+     }
+     .industries_info .et_pb_column {
+         max-width: 350px;
+         float: none;
+         margin: 0 auto 30px auto;
+     }
+     .industries_info.et_pb_row .et_pb_column:last-child {
+         margin: 0 auto !important;
+     }
+     .ourwork_searchreasult_list ul li,
+     .ourwork_searchreasult_list ul li:nth-child(1) {
+         width: 100%;
+         height: calc(100vw * 0.45);
+         padding: 0 !important;
+         margin: 0 0 10px 0;
+     }
+     .ourwork_searchreasult_list ul li:last-child {
+         margin: 0;
+     }
+     .ourwork_searchreasult_list ul li .ourwork_searchreasult_cont,
+     .ourwork_searchreasult_list ul li:nth-child(1) .ourwork_searchreasult_cont {
+         padding: 10px 60px 10px 10px;
+     }
+     .ourwork_searchreasult_list ul li .ourwork_searchreasult_cont h5,
+     .ourwork_searchreasult_list ul li:nth-child(1) .ourwork_searchreasult_cont h5 {
+         font-size: 16px;
+     }
+     .ourwork_searchreasult_list ul li .ourwork_searchreasult_cont .download_arrow,
+     .ourwork_searchreasult_list ul li:nth-child(1) .ourwork_searchreasult_cont .download_arrow {
+         width: 40px;
+         right: 10px;
+         margin: -20px 0 0 0;
+     }
+     .ourwork_searchreasult_list ul li .ourwork_searchreasult_social_list a,
+     .ourwork_searchreasult_list ul li:nth-child(1) .ourwork_searchreasult_social_list a {
+         width: 35px;
+     }
+     .et_pb_gutters3.et_pb_footer_columns2 .footer-widget,
+     .et_pb_gutters3.et_pb_footer_columns2 .footer-widget:first-child {
+         width: 100% !important;
+         margin: 0 !important;
+     }
+     #footer-widgets .footer-widget .fwidget {
+         margin-bottom: 20px;
+     }
+     .ourwork_searchfilter {
+         display: none;
+     }
+     .ourwork_search_info {
+         padding: 0;
+     }
+     .ourwork_search_form {
+         position: relative;
+     }
+     .ourwork_search_form .searchandfilter {
+         margin: 0 0 20px 0;
+     }
+     .ourwork_search_form .searchandfilter ul:after {
+         clear: both;
+         display: block;
+         content: "";
+     }
+     .ourwork_search_form .searchandfilter ul li.sf-field-search {
+         position: absolute;
+         top: 0;
+         right: 0;
+     }
+     .ourwork_search_form .searchandfilter ul li.sf-field-taxonomy-work_industry,
+     .ourwork_search_form .searchandfilter ul li.sf-field-taxonomy-work_function {
+         float: left;
+         width: 50%;
+         height: inherit;
+         margin: 50px 0 0 0;
+     }
+     .ourwork_search_form .searchandfilter ul li.sf-field-taxonomy-work_industry {
+         padding: 0 10px 0 0;
+     }
+     .ourwork_search_form .searchandfilter ul li.sf-field-taxonomy-work_function {
+         padding: 0 0 0 10px;
+     }
+     .searchandfilter h4 {
+         margin: 0 0 20px 0;
+         padding: 0;
+         font-size: 18px;
+         text-transform: uppercase;
+         font-weight: normal;
+     }
+     .ourwork_search_form .searchandfilter ul li select {
+         font-size: 16px;
+         color: #000;
+         font-family: 'open_sansregular';
+     }
+     #et-top-navigation {
+         padding-left: 0 !important;
+     }
+     .ourwork_searchreasult_list ul li .ourwork_searchreasult_cont .download_arrow_form {
+         top: -200px;
+         left: -470px;
+     }
+     .ourwork_searchreasult_list ul li:nth-child(1) .download_arrow_form {
+         top: -200px !important;
+         left: -300px !important;
+     }
+     .aboutus_banner_info h3 {
+         margin: 0 0 20px 0;
+         font-size: 28px;
+     }
+     .aboutus_banner_info p {
+         font-size: 18px;
+         line-height: 30px;
+     }
+     .aboutus_bottombanner_info {
+         padding: 100px 0 !important;
+     }
+     .aboutus_bottombanner_txt {
+         padding: 15px !important;
+     }
+     .aboutus_bottombanner_txt h4 {
+         font-size: 24px;
+     }
+     .breadcrumbs {
+         margin: 0;
+     }
+     .ecommerce_alpha_info .et_pb_column .ecommerce_border_right {
+         border: 0;
+     }
+     .individualcasestudy_down_cont {
+         position: relative;
+         padding: 10px 0;
+     }
+     .individualcasestudy_down_contleft {
+         width: 70%;
+     }
+     .individualcasestudy_down_contleft h1 {
+         margin: 0 0 10px 0;
+         font-size: 20px;
+     }
+     .individualcasestudy_down_contleft p {
+         font-size: 14px;
+     }
+     .joinus_hotopenings_info {
+         background: none;
+     }
+     #blog_category {
+         padding: 20px 0;
+     }
+     h2.resp-accordion {
+         padding: 10px 15px;
+         cursor: pointer;
+         margin: 0;
+         color: #7f7f7f;
+         font-family: 'montserratregular';
+         font-weight: normal;
+         font-size: 16px;
+         text-align: left;
+     }
+     h2.resp-accordion.resp-tab-active {
+         background: #6caee0 !important;
+     }
+     .v_banner_wrapper .banner_content h1 {
+         font-size: 32px;
+     }
+     .et_pb_fullwidth_menu .et_mobile_nav_menu {
+         float: right;
+         margin: 0 20px 0 0;
+     }
+     .et_pb_fullwidth_menu .et_mobile_menu {
+         padding: 0;
+     }
+     .industries_contactus_info .et_pb_column_2_3 {
+         padding-right: 0;
+     }
+     .page-template-archive-tableau_resources .et_mobile_menu li,
+     .tax-tableau-category .et_mobile_menu li,
+     .single-tableau_resources .et_mobile_menu li {
+         display: none;
+     }
+     .page-template-archive-tableau_resources .et_mobile_menu li.contact_menu,
+     .tax-tableau-category .et_mobile_menu li.contact_menu,
+     .single-tableau_resources .et_mobile_menu li.contact_menu {
+         display: block;
+     }
+     .tableau_menu .fullwidth-menu-nav {
+         display: block;
+         padding: 0 0 0 10px;
+     }
+     .tableau_menu .fullwidth-menu {
+         display: block;
+     }
+     .tableau_menu .et_mobile_nav_menu {
+         display: none !important;
+     }
+     .tableau_menu .et_pb_fullwidth_menu .et_pb_row {
+         min-height: inherit;
+     }
+ }
+ 
+ @media (max-width: 767px) {
+     .pharma_bannercont h4,
+     .pharma_bannercont h1 {
+         font-size: 20px !important;
+         line-height: 30px !important;
+     }
+     .pharma_bannercont p {
+         font-size: 10px !important;
+     }
+     .parent-pageid-372 .pharmavideo_banner .tp-parallax-wrap:last-child,
+     .home .pharmavideo_banner .tp-parallax-wrap:last-child {
+         bottom: 85px !important;
+     }
+     .pharmavideo_bannercont h4 {
+         font-size: 16px !important;
+     }
+     .footer_logo {
+         display: none;
+     }
+     #footer-widgets .footer-widget:nth-child(n) {
+         margin-bottom: 0 !important;
+     }
+     .et_pb_section {
+         /*padding: 30px 0;*/
+     }
+     .banner_info {
+         padding: 0;
+     }
+     .et_pb_row,
+     .et_pb_column .et_pb_row_inner {
+         padding: 10px 0;
+     }
+     .ourwork_searchreasult_list ul li .ourwork_searchreasult_cont .download_arrow_form {
+         top: -170px;
+     }
+     .ourwork_searchreasult_list ul li:nth-child(1) .download_arrow_form {
+         top: -170px !important;
+     }
+     .aboutus_banner_info h3 {
+         font-size: 24px;
+     }
+     .block_data h5 {
+         margin: 0 0 10px 0;
+     }
+     .block_data h5,
+     .block_data p {
+         min-height: inherit;
+     }
+     .banner_bloginner {
+         height: 350px;
+     }
+     .v_banner_wrapper .banner_content h1 {
+         font-size: 26px;
+     }
+     .block_wrapper {
+         margin: 0 0 15px 0;
+     }
+     .block_wrapper img {
+         height: inherit;
+     }
+     .tableau_menu .fullwidth-menu li {
+         padding-right: 5px;
+     }
+     .tableau_menu .fullwidth-menu li.home_tableau {
+         padding-right: 22px;
+     }
+     .individualcasestudy_info .individualcasestudy_img .desktop_img {
+         display: none;
+     }
+     .individualcasestudy_info .individualcasestudy_img .mobile_img {
+         display: block;
+     }
+ }
+ 
+ @media (max-width: 620px) {
+     .pharma_bannercont h4,
+     .pharma_bannercont h1 {
+         font-size: 16px !important;
+         line-height: 22px !important;
+     }
+     .pharma_bannercont p {
+         font-size: 8px !important;
+     }
+     .pharmavideo_bannercont {
+         text-align: center;
+     }
+     .parent-pageid-372 .pharmavideo_banner .tp-parallax-wrap:last-child,
+     .home .pharmavideo_banner .tp-parallax-wrap:last-child {
+         bottom: 98px !important;
+     }
+     .pharmavideo_bannercont h4 {
+         float: none;
+         display: block;
+         text-align: center;
+         margin: 0 0 10px 0;
+     }
+     .pharmavideo_bannercont .knowmore_btn {
+         float: none;
+     }
+     .ourwork_searchreasult_list ul li,
+     .ourwork_searchreasult_list ul li:nth-child(1) {
+         height: calc(100vw * 0.5);
+     }
+     .ourwork_searchreasult_list ul li .ourwork_searchreasult_social_list a,
+     .ourwork_searchreasult_list ul li:nth-child(1) .ourwork_searchreasult_social_list a {
+         width: 25px;
+     }
+     .ourwork_searchreasult_list ul li .ourwork_searchreasult_social_list {
+         padding: 5px;
+     }
+     .ourwork_searchreasult_list ul li .ourwork_searchreasult_cont,
+     .ourwork_searchreasult_list ul li:nth-child(1) .ourwork_searchreasult_cont {
+         padding: 10px 50px 10px 10px;
+     }
+     .ourwork_searchreasult_list ul li .ourwork_searchreasult_cont h5,
+     .ourwork_searchreasult_list ul li:nth-child(1) .ourwork_searchreasult_cont h5 {
+         font-size: 14px;
+     }
+     .ourwork_searchreasult_list ul li .ourwork_searchreasult_cont .download_arrow,
+     .ourwork_searchreasult_list ul li:nth-child(1) .ourwork_searchreasult_cont .download_arrow {
+         width: 25px;
+         margin: -12.5px 0 0 0;
+     }
+     .ourwork_searchreasult_list ul li .ourwork_searchreasult_cont .download_arrow_form {
+         top: -120px;
+         left: -360px;
+     }
+     .ourwork_searchreasult_list ul li:nth-child(1) .download_arrow_form {
+         top: -120px !important;
+         left: -190px !important;
+     }
+     #footer-widgets .footer-widget .fwidget,
+     .et_pb_gutters3.et_pb_footer_columns2 .footer-widget #nav_menu-5,
+     #footer-widgets .footer-widget .fwidget:last-child {
+         margin-bottom: 20px !important;
+         width: 100%;
+     }
+     .footer-widget h4 {
+         margin: 0 0 10px 0;
+         font-size: 18px;
+     }
+     .title_list h4 {
+         font-size: 20px;
+     }
+     .industries_list h3 {
+         font-size: 22px;
+     }
+     .ourwork_searchreasult_list ul li .ourwork_searchreasult_cont,
+     .ourwork_searchreasult_list ul li:nth-child(1) .ourwork_searchreasult_cont {
+         padding: 10px 45px 10px 10px;
+     }
+     .ourwork_searchreasult_list ul li .ourwork_searchreasult_cont p {
+         display: none;
+     }
+     .industries_info_list .industries_list .industries_listinner {
+         padding: 230px 10px 20px 10px;
+     }
+     .industries_info_list .industries_list.industries_list_big .industries_listinner {
+         padding: 250px 10px 20px 10px;
+     }
+     .ourwork_searchreasult_list ul li:hover .ourwork_searchreasult_social_list {
+         display: none;
+     }
+     .aboutus_banner_info h3 {
+         margin: 0 0 10px 0;
+         font-size: 20px;
+     }
+     .aboutus_banner_info p {
+         font-size: 16px;
+         line-height: 26px;
+     }
+     .aboutus_bottombanner_info {
+         padding: 50px 0 !important;
+     }
+     .aboutus_bottombanner_txt h4 {
+         font-size: 16px;
+     }
+     .aboutus_bottombanner_txt h4 br {
+         display: none;
+     }
+     .achievementandawards_list h4 {
+         font-size: 16px;
+         margin: 0 0 10px 0;
+     }
+     .ecommerce_alpha_info p,
+     .pharma_alpha_info p {
+         font-size: 14px;
+     }
+     .individualcasestudy_contact_left p {
+         font-size: 16px;
+     }
+     .individualcasestudy_contact h4 {
+         font-size: 24px;
+     }
+     .individualcasestudy_down_contleft {
+         width: 100%;
+     }
+     .freedownload_btn {
+         width: 100%;
+         text-align: center;
+     }
+     .individualcasestudy_down_cont .email_form {
+         max-width: 350px;
+         width: 100%;
+         bottom: 120%;
+     }
+     .individualcasestudy_down_contleft h1 {
+         margin: 0 0 5px 0;
+         font-size: 16px;
+     }
+     .individualcasestudy_down_contleft p {
+         font-size: 12px;
+         line-height: 18px;
+     }
+     .emerging_top_txt .emerging_img {
+         float: none;
+         margin: 0 auto;
+     }
+     .emerging_top_txt .emerging_top_cont {
+         padding: 10px 0 0 0;
+         font-size: 18px;
+         line-height: 28px;
+         text-align: center;
+     }
+     .block_data h5,
+     .block_data p {
+         font-size: 14px;
+         line-height: 20px;
+     }
+     .v_banner_wrapper .banner_content h1 {
+         font-size: 20px;
+     }
+     .banner_bloginner {
+         height: 300px;
+     }
+     .fb_iframe_widget {
+         overflow: hidden;
+         width: 100%;
+     }
+     .blogs p.comment-form-author,
+     .blogs p.comment-form-email {
+         width: 100%;
+         padding: 0;
+     }
+     .tableau h4 {
+         font-size: 16px;
+         margin: 10px 0 5px 0;
+     }
+     .team_list h5 {
+         font-size: 14px;
+         line-height: 24px;
+     }
+     .v_banner_wrapper .banner_content p {
+         font-size: 12px;
+     }
+     .social_email_info .social_list {
+         display: none;
+     }
+ }
+ 
+ @media (max-width: 450px) {
+     .pharma_bannercont h4,
+     .pharma_bannercont h1 {
+         font-size: 12px !important;
+         line-height: 18px !important;
+     }
+     .pharma_bannercont p {
+         font-size: 6px !important;
+         display: none;
+     }
+     .parent-pageid-372 .pharmavideo_banner .tp-parallax-wrap:last-child,
+     .home .pharmavideo_banner .tp-parallax-wrap:last-child {
+         bottom: 0px !important;
+     }
+     .pharmavideo_bannercont h4 {
+         font-size: 12px !important;
+     }
+     .parent-pageid-372 .banner_logolist,
+     .home .banner_logolist {
+         position: relative;
+     }
+     .ourwork_search_form .searchandfilter ul li.sf-field-taxonomy-work_industry,
+     .ourwork_search_form .searchandfilter ul li.sf-field-taxonomy-work_function {
+         width: 100%;
+         padding: 0;
+     }
+     .ourwork_search_form .searchandfilter ul li.sf-field-taxonomy-work_function {
+         margin: 20px 0 0 0;
+     }
+     .ourwork_searchreasult_list ul li .ourwork_searchreasult_cont h5,
+     .ourwork_searchreasult_list ul li:nth-child(1) .ourwork_searchreasult_cont h5 {
+         font-size: 12px;
+     }
+     .industries_info_list .industries_list .industries_listinner {
+         padding: 180px 10px 20px 10px;
+     }
+     .industries_info_list .industries_list.industries_list_big .industries_listinner {
+         padding: 200px 10px 20px 10px;
+     }
+     .industries_listinner .industries_listcont {
+         font-size: 14px;
+         padding: 10px;
+     }
+     .bottom-nav li {
+         font-size: 10px;
+     }
+     .individualcasestudy_contact h4 {
+         font-size: 20px;
+     }
+     .emerging_top_txt .emerging_top_cont {
+         font-size: 16px;
+         line-height: 26px;
+     }
+     .contact_sociallist ul li {
+         margin: 0 5px 0 0;
+     }
+     .ourworkforecommerce_btn {
+         font-size: 14px !important;
+     }
+     .banner_bloginner {
+         height: 240px;
+     }
+     .v_banner_wrapper .banner_content h1 {
+         font-size: 18px;
+     }
+     .v_banner_wrapper .banner_content p {
+         font-size: 10px;
+         padding: 3px 5px;
+     }
+     .ourwork_searchreasult_list ul li .ourwork_searchreasult_cont .download_arrow_form {
+         top: -90px;
+         left: -210px;
+         width: 230px !important;
+         height: auto !important;
+         padding: 5px;
+     }
+     .ourwork_searchreasult_list ul li .download_form {
+         padding: 0;
+     }
+     .ourwork_searchreasult_list ul li:nth-child(1) .download_arrow_form {
+         top: -90px !important;
+         left: -100px !important;
+         width: 230px !important;
+     }
+     .download_sec small {
+         font-size: 8px;
+     }
+     .btn-download {
+         width: auto;
+         font-size: 12px;
+         padding: 5px 10px;
+     }
+     .individualcasestudy_down_cont .email_form {
+         max-width: 230px;
+     }
+     .pharmavideo_bannercont .knowmore_btn {
+         line-height: 6px !important;
+     }
+ }

@@ -1,0 +1,2698 @@
+<!DOCTYPE html>
+
+<html dir="ltr" lang="en-US" prefix="og: https://ogp.me/ns#" prefix="og: http://ogp.me/ns#">
+
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+	<meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="Tooplate">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    
+     <link rel="icon" href="images/logo.jpg">
+	 <link rel="stylesheet" href="css/style2.css">
+     <link rel="stylesheet" href="css/style.css">
+	<!-- <link rel="stylesheet" href="./css/bootstrap.css"> -->
+	<link rel="stylesheet" href="./css/swiper.min.css">
+	<link rel="stylesheet" href="./css/animate.css">
+	<link rel="stylesheet" href="./css/changes.css">
+	
+	<title>What is Value at Risk and how to accurately calculate it to safeguard your portfolio in 2 easy steps?</title>
+
+	<style>
+		h1 {
+			font-size: 46px !important;
+		}
+
+		h2 {
+			font-size: 35px !important;
+		}
+
+		li.subheadli::before {
+			font-size: 35px !important;
+		}
+
+		p {
+			font-size: 25px !important;
+		}
+
+		#left-area li {
+			font-size: 25px !important;
+		}
+
+		span {
+			font-size: 25px !important;
+		}
+
+		ul {
+			font-size: 25px !important;
+		}
+
+		b {
+			font-size: 25px !important;
+		}
+
+		strong {
+			font-size: 25px !important;
+		}
+
+		.txtShadow {
+			font-size: 31px !important;
+			line-height: 1em !important;
+		}
+
+		div {
+			font-size: 25px !important;
+		}
+
+		#sidebar {
+			font-size: 18px !important;
+		}
+
+		.widgettitle {
+			font-size: 25px !important;
+		}
+
+		#sidebar a {
+			font-size: 18px !important;
+		}
+
+		#left-area p {
+			color: #393b6d !important;
+		}
+
+		#left-area a {
+			color: #393b6d !important;
+		}
+
+		#left-area li {
+			color: #393b6d !important;
+		}
+
+		#left-area ul {
+			color: #393b6d !important;
+		}
+
+		#left-area b {
+			color: #393b6d !important;
+		}
+
+		#left-area strong {
+			color: #393b6d !important;
+		}
+
+		#left-area h1 {
+			color: #393b6d !important;
+		}
+
+		#left-area h2 {
+			color: #393b6d !important;
+		}
+
+		.container:before {
+			display: none;
+		}
+
+		.widgettitle {
+			color: #393b6d !important;
+		}
+
+		#index-ul li a {
+			font-size: 18px !important;
+		}
+		#sidebar .et_pb_widget{
+			display: none;
+		}
+	
+		h2{
+			font-size: 40px !important;
+			line-height: 1.4em !important;
+		}
+		.txtShadow{
+			font-size: 28px !important;
+		}
+		img{
+			width: 85% !important;
+		}
+		strong{
+			font-size: 21px !important;
+		}
+		strong a{
+			font-size: 21px !important;
+		}
+		/* #left-area {
+		opacity: 0;
+		transition: opacity 1s ease-in-out;
+		}
+
+		#left-area.show {
+		opacity: 1;
+		} */
+		#index-ul li{
+				line-height: 1.3em !important;
+		}
+	</style>
+	
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			const stickyDiv = document.querySelector("#index-container");
+			let isSticky = false;
+
+			window.addEventListener("scroll", function() {
+				if (window.scrollY >= 20 && !isSticky) {
+					stickyDiv.style.position = "sticky";
+					stickyDiv.style.top = "115px";
+					isSticky = true;
+				} else if (window.scrollY < 20 && isSticky) {
+					stickyDiv.style.position = "relative";
+					stickyDiv.style.top = "0";
+					isSticky = false;
+				}
+			});
+		});
+	  </script>
+	
+	  <script>history.scrollRestoration = "manual"</script>
+</head>
+
+<body
+	class="page-template-default page page-id-3856 et_pb_button_helper_class et_fixed_nav et_show_nav et_cover_background et_pb_gutter windows et_pb_gutters3 et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_pb_footer_columns2 et_header_style_left et_right_sidebar et_divi_theme et-db et_minified_js et_minified_css">
+	<nav class="navbar navbar-expand-lg">
+        <div class="container">
+
+            <a class="navbar-brand" href="#" style="
+		
+			height: auto;
+			font-size: 21px;
+		">
+                Saurabh
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a href="#intro" class="nav-link smoothScroll">Introduction</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link smoothScroll">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#testimonials" class="nav-link smoothScroll">Reviews</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link smoothScroll">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="mt-lg-0 mt-3 mb-4">
+                    <a href="./learn.html" class="custom-btn btn" download style="font-size: 14px;">Start learning</a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+	<div id="page-container">
+
+
+
+		
+		<div id="et-main-area">
+			<div id="main-content">
+				
+				<div class="container" style="padding: 20px 6%;
+				
+				max-width: 100%;">
+					<div id="content-area" class="clearfix">
+						<div style="display: inline;width: 20%; float: left;" id="index-container" class="firstindex">
+							<h3 style="color: #393b6d !important;font-size: 31px !important;" class="txtShadow">Contents</h3>
+							<ul id="index-ul" style="color: #393b6d !important;">
+								<li><a href="javascript:void(0);" onclick="scrollToSection('wicp-index')">What is Value at Risk?</a></li>
+								<li><a href="javascript:void(0);" onclick="scrollToSection('ccpai-index')">Customer
+										churn problem across industries</a></li>
+								<li><a href="javascript:void(0);" onclick="scrollToSection('pcudm-index')">Predicting
+										churn using datascience & ML</a></li>
+								<!-- <li><a href="javascript:void(0);" onclick="scrollToSection('cisi-index')">Churn in saas
+										industry</a></li> -->
+								<li><a href="javascript:void(0);" onclick="scrollToSection('pttiyscr-index')">Tips to
+										improve saas churn rates</a></li>
+								<!-- <li><a href="javascript:void(0);" onclick="scrollToSection('citi-index')">Churn in
+										telecom industry</a></li> -->
+								<li><a href="javascript:void(0);" onclick="scrollToSection('cati-index')">Important
+										features of churn analysis in telecom</a></li>
+								<li><a href="javascript:void(0);" onclick="scrollToSection('cibs-index')">Churn in
+										banking sector</a></li>
+								<!-- <li><a href="javascript:void(0);" onclick="scrollToSection('mcs-index')">Miscellaneous
+										Churn studies</a></li> -->
+								<li><a href="javascript:void(0);" onclick="scrollToSection('htpc-index')">How to prevent
+										churn</a></li>
+								<li><a href="javascript:void(0);" onclick="scrollToSection('c-index')">Conclusion</a>
+								</li>
+							</ul>
+						</div>
+						<div id="left-area" style="width: 48%;margin: 0 10%;padding: 0px !important;">
+							<article id="post-3856" class="post-3856 page type-page status-publish hentry">
+								<h1 class="entry-title main_title" style="line-height: 1.5em !important;">
+									What is Value at Risk and how to accurately calculate it to safeguard your portfolio in 2 easy steps? </h1>
+								<div class="entry-content">
+									<div class="secondindex" id="secindex">
+										<h3 style="color: #393b6d !important;font-size: 31px !important;" class="txtShadow">Contents</h3>
+										<ul id="index-ul" style="color: #393b6d !important;">
+											<li><a href="javascript:void(0);" onclick="scrollToSection('wicp-index')">What is Value at Risk?</a></li>
+											<li><a href="javascript:void(0);" onclick="scrollToSection('ccpai-index')">Customer
+													churn problem across industries</a></li>
+											<li><a href="javascript:void(0);" onclick="scrollToSection('pcudm-index')">Predicting
+													churn using datascience & ML</a></li>
+											<!-- <li><a href="javascript:void(0);" onclick="scrollToSection('cisi-index')">Churn in saas
+													industry</a></li> -->
+											<li><a href="javascript:void(0);" onclick="scrollToSection('pttiyscr-index')">Tips to
+													improve saas churn rates</a></li>
+											<!-- <li><a href="javascript:void(0);" onclick="scrollToSection('citi-index')">Churn in
+													telecom industry</a></li> -->
+											<li><a href="javascript:void(0);" onclick="scrollToSection('cati-index')">Important
+													features of churn analysis in telecom</a></li>
+											<li><a href="javascript:void(0);" onclick="scrollToSection('cibs-index')">Churn in
+													banking sector</a></li>
+											<!-- <li><a href="javascript:void(0);" onclick="scrollToSection('mcs-index')">Miscellaneous
+													Churn studies</a></li> -->
+											<li><a href="javascript:void(0);" onclick="scrollToSection('htpc-index')">How to prevent
+													churn</a></li>
+											<li><a href="javascript:void(0);" onclick="scrollToSection('c-index')">Conclusion</a>
+											</li>
+										</ul>	
+									</div>
+									<h2 id="wicp-index">What is Value at Risk?</h2>
+
+									<ul class="list">
+										<p>Value at Risk, in simplest term, is a statistic used to know how much loss our portfolio, company, positions will experience over a specific period of time. It can be denoted as VaR (Don't confuse it with VAR as capitalized A will mean variance). Now let's take an example:
+										    1% one-year VaR $100 million means that there is a 1% chance that our portfolio will lose  $100 million in one year. As you noticed while writing VaR we write it like this: (% Chance)(Time period)(Amount that our potfolio might lose).
+											<br><br> Customer churn is when an:
+										<ul class="mylist">
+											<li>Existing customer</li>
+											<li>User</li>
+											<li>Player</li>
+											<li>Subscriber</li>
+											<li>Any kind of return client</li>
+										</ul>
+										stops
+										doing business or ends the relationship with a company.<br><br> This could, for
+										example,
+										mean:
+										<br>
+										<ul class="mylist">
+											<li>Cancellation of a subscription</li>
+											<li>Non-renewal of a contract or service agreement</li>
+											<li>ending a membership</li>
+											<li>customer decision to shop at another store/use another service provider
+											</li>
+										</ul>
+										</p>
+										<p><img style="border:1px solid black;"
+												class="size-medium wp-image-4666 aligncenter"
+												src="./images/Churn-analyses-will-gauge-the-satisfaction-level-of-customers-300x175.png"
+												alt="Churn analyses" width="300" height="175"
+												srcset="https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Churn-analyses-will-gauge-the-satisfaction-level-of-customers-300x175.png 300w, https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Churn-analyses-will-gauge-the-satisfaction-level-of-customers.png 700w"
+												sizes="(max-width: 300px) 100vw, 300px" /></p>
+										<p style="text-align: center;"><strong>      Fig 1. Churn Analyses will gauge
+												the
+												satisfaction level of customers (<a
+													href="https://technologyadvice.com/blog/sales/crm-stop-customer-churn/">Source</a>)</strong>
+										</p>
+
+										<p><a
+												href="https://customergauge.com/blog/customer-churn-and-how-to-see-it-coming">All
+												companies</a>, irrespective of size or growth, are affected by customers
+											defecting and the following financial consequences.<br><br>Hence, it is very
+											important
+											to understand what had caused your previously loyal customers to churn away
+											and
+											then <b>translate these learnings into business mechanisms to prevent
+												churn.</b>
+										</p>
+
+
+										<li class="subheadli">
+											<h3 class="txtShadow">Acquiring Customers Is Expensive, But Retention Can
+												Lead Up To
+												95%
+												Increase In Profits</h3>
+										</li>
+										<p>Churn rate is one of the important metrics in evaluating business growth and
+											performance.<br><br>
+											<b class="bmargin">Business studies:</b>
+											Businesses spend lots of money in acquiring new
+											customers
+											and <a
+												href="https://blog.hubspot.com/service/customer-acquisition-study">studies</a>
+											show that Cost of Customer Acquisition (COCA) has increased over 60%
+											in
+											the last
+											5 years and continuing to rise at a higher rate.<br><br>
+											<b class="bmargin">Customer churn prevention:</b>
+											Spending tons of
+											money
+											to
+											acquire new customers and then to have the same customers churn away after 3
+											months is no good for any business.
+
+										<p>Therefore, Customer Churn
+											Prevention has become a major part of the Customer Relationship
+											Management (CRM) for a business.</p>
+										<b class="bmargin">Harvard business review (Gallo):</b>
+										As the cost to acquire a new
+										customer is
+										anywhere from 5 to 25 times more expensive than retaining an existing
+										one,
+										according to a Harvard Business Review (Gallo). <br><br><b><a
+												style="text-decoration: none !important;" class="bmargin"
+												href="https://hbswk.hbs.edu/archive/the-economics-of-e-loyalty">Harvard
+												Studies:</a></b>
+										Studies by Harvard Business School also show that improving customer retention
+										rates
+										by
+										5% increases profits by 25% to 95%.<br>     <img
+											style="border:1px solid black; border-radius: 7px;" loading="lazy"
+											class="size-medium wp-image-4667 aligncenter"
+											src="./images/Customer-Churn-will-have-compounded-exponential-effect-on-Revenue-Lose-300x163.jpg"
+											alt="Customer Churn will
+												have
+												compounded exponential
+												effect on Revenue Loss" width="300" height="163"
+											srcset="https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Customer-Churn-will-have-compounded-exponential-effect-on-Revenue-Lose-300x163.jpg 300w, https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Customer-Churn-will-have-compounded-exponential-effect-on-Revenue-Lose.jpg 594w"
+											sizes="(max-width: 300px) 100vw, 300px" /></p>
+										<p style="text-align: center;"><strong>              Fig 2. Customer Churn will
+												have
+												compounded exponential
+												effect on Revenue Loss (<a
+													href="https://www.smartkarrot.com/customer-churn/">Source</a>)</strong>
+										</p>
+
+										<li class="subheadli">
+											<h3 class="txtShadow">Focusing On High Value Customers Can Have Significant
+												Positive Impact On Profits</h3>
+										</li>
+										<p><b class="bmargin"><a style="text-decoration: none !important;"
+													href="https://blog.hubspot.com/service/customer-acquisition-study">Customer
+													studies:</a></b>
+											In the recent years there has been a steady drop in customer
+											trust
+											among consumers, 81% of customers trust the advice of friends and family
+											over
+											that of a business.<br><br> Also new customers acquired via such
+											referrals of friends or
+											family spend 200% more and have a 16% higher Lifetime Value than
+											other
+											customers. <br><br> So, taking good care existing customers can reap more
+											valuable
+											customers in future.</p>
+										<li class="subheadli">
+											<h3 class="txtShadow">Customer Loyalty Is Key To Generating More Value With
+												Time</h3>
+										</li>
+										<p>Existing customers are considered as the most valuable asset for a business,
+											and
+											therefore, firms and industries emphasize on keeping the existing customers
+											satisfied, by employing practices. Thus, retaining the existing customers
+											is
+											just as important as attracting and acquiring the new customers.</p>
+										<p><b class="bmargin"><a style="text-decoration: none !important;"
+													href="https://www.issgovernance.com/market-intelligence/market-metrics/">Marketing
+													Metrics:</a></b>The success rate of selling to an existing customer
+											is
+											60-70%,
+											while the success rate of selling to a new customer is only 5-20%!.
+										</p>
+										<p>The following <a
+												href="https://www.gravysolutions.io/post/customer-churn-rate-and-retention-top-25-stats-you-need-to-know">blog
+												post</a> describes top 25 interesting statistics and facts about
+											customer
+											churn.</p>
+										<p><img style="border:1px solid black;" loading="lazy"
+												class="size-medium wp-image-4668 aligncenter"
+												src="./images/Exiting-customers-are-more-valuable-than-newly-acquired-300x200.png"
+												alt="Existing customers are more
+												valuable
+												than newly acquired" width="300" height="200"
+												srcset="https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Exiting-customers-are-more-valuable-than-newly-acquired-300x200.png 300w, https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Exiting-customers-are-more-valuable-than-newly-acquired.png 533w"
+												sizes="(max-width: 300px) 100vw, 300px" /></p>
+										<p style="text-align: center;"><strong>Fig 3. Existing customers are more
+												valuable
+												than newly acquired (<a
+													href="https://www.superoffice.com/blog/customer-retention-tips-with-crm-software/">Source</a>)</strong><strong> </strong>
+										</p>
+
+										<li class="subheadli">
+											<h3 class="txtShadow">Churn Is Identified Based On Various Benchmarks Of
+												Customer Disengagement
+											</h3>
+										</li>
+										<p>Identifying churn and what is causing churn is important to take necessary
+											preventive measure against churn.The way churn is defined can vary across
+											businesses depending upon the type of business and revenue
+											model.<br><br>
+											<b>Churn could be
+												a:</b>
+										<ul class="mylist">
+											<li>Customer not re-purchasing your products (within a stipulated time
+												interval)</li>
+											<li>Customer unsubscribing from the service</li>
+											<li>Customer
+												uninstalling
+												an app</li>
+										</ul>
+										In general terms, churn can be defined as a degree of
+										customer
+										inactivity or disengagement observed over time.</p>
+										<b>Various indicators convey that a business may be losing customers to churn,
+											like:</b>
+										<ul class="mylist">
+											<li>low customer engagement</li>
+											<li>lower customer usage activity</li>
+											<li>Increasing customer
+												complaints</li>
+											<li>Low customer rating</li>
+											<li>customer satisfaction</li>
+										</ul>
+										<p>Every business needs to create a set-off benchmarks based on which you can
+											identify the customers who are at risk of churn.<br><br>Some other ways
+											to
+											identify
+											customer churn are by actively collecting customer feedback and reviews
+											to
+											look
+											for any possible customer dissatisfaction, checking with customer
+											service
+											&amp;
+											support teams to understand any requirements of customers that the
+											company is
+											unable to meet.</p>
+
+
+										<li class="subheadli">
+											<h3 class="txtShadow">How Churn Rate Calculation Can Mislead Your Retention
+												Strategy
+											</h3>
+										</li>
+										<p>Basic Churn Rate for a time period calculated using the following
+											formula:
+										</p>
+										<p><img loading="lazy" style="border: 1px solid black;"
+												class="size-medium wp-image-4692 aligncenter"
+												src="./images/Churn-rate-300x49.png"
+												alt="Churn rate calculation formula for basic churn rate for a time period"
+												width="300" height="49"
+												srcset="https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Churn-rate-300x49.png 300w, https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Churn-rate.png 456w"
+												sizes="(max-width: 300px) 100vw, 300px" /></p>
+										<p>The above calculation though tends to give the initial figures to understand
+											churn, it may not be the right calculation when we may have to keep
+											track
+											of
+											churn rate for certain number of periods.</p>
+										<b class="bmargin">Consider you are calculating churn for the month of April and
+											May:</b>
+										<ul class="mylist">
+											<li>Let’s say, you started with 10,000 customers at the start of April and
+												lost
+												500
+												of them (5 % of 10,000), gained 5000 new customers in April but lost 125
+												of
+												those new customers. Customers at the start of May is (10000-500) +
+												(5000-125) =
+												14375.</li>
+											<li>Now in May let’s say you lost same rate of customers similar to April
+												i.e.., 5% of 14375 = 719, gained 5000 new customers and lost 125 of
+												them.</li>
+										</ul>
+										<p> Based on above formula Churn Rate in April is 6.25%.</p>
+
+										<p><img loading="lazy" style="border: 1px solid black;"
+												class="size-medium wp-image-4693 aligncenter"
+												src="./images/April-churn-rate-300x53.png"
+												alt="April churn rate" width="300" height="53"
+												srcset="https://www.perceptive-analytics.com/wp-content/uploads/2022/02/April-churn-rate-300x53.png 300w, https://www.perceptive-analytics.com/wp-content/uploads/2022/02/April-churn-rate.png 360w"
+												sizes="(max-width: 300px) 100vw, 300px" /></p>
+										<p>Churn rate for month of May comes to be 5.87%</p>
+										<p><img loading="lazy" style="border: 1px solid black;"
+												class="size-medium wp-image-4694 aligncenter"
+												src="./images/May-churn-rate-300x55.png"
+												alt="May churn rate" width="300" height="55"
+												srcset="https://www.perceptive-analytics.com/wp-content/uploads/2022/02/May-churn-rate-300x55.png 300w, https://www.perceptive-analytics.com/wp-content/uploads/2022/02/May-churn-rate.png 352w"
+												sizes="(max-width: 300px) 100vw, 300px" /></p>
+										<p>Though the churn is similar in both months as setup above, we see the
+											churn
+											rate
+											dropped in May, this has nothing to do with improving churn performance
+											or
+											retention rate, rather a misreporting of the problem by the above
+											formula.</p>
+										<br>
+										<li class="subheadli">
+											<h3 class="txtShadow">Churn Calculation That Is Normalized For Company’s
+												Growth & Size Is The Right Approach</h3>
+										</li>
+									</ul>
+									<p>Apart from that, if the month of April didn’t gain as many customers but only
+										100, 2 of which churned and May remained same as above, then April would have
+										Churn Rate of 5.02% and May would have Churn Rate of 6.3%. <br><br>This is
+										because the
+										<b>above calculation is highly influenced by number of new customers that joined
+											during the period.</b><br><br> <b>It is important to have a churn
+											calculation that better
+											explains churn behavior that is normalized for growth and size of the
+											company.</b>
+										<br><br>This calculation will also tend to show wrong churn rates when
+										calculated for
+										different time ranges (Monthly, Quarterly, Annual, etc.,), and no. of. days in
+										the month, like Feb 28 days and May 31 days are also likely to affect the churn
+										rate calculation.
+									</p>
+									<p>In order <b>to tackle above problems</b> in churn calculation Stephen Noble of
+										Shopify
+										came up with the <b>following </b><a
+											href="https://shopify.engineering/defining-churn-rate-no-really-this-actually-requires-an-entire-blog-post">churn
+											calculation based on probability</a>,</p>
+									<p><img loading="lazy" style="padding: 0px 61px;width: 95% !important;"
+											class="aligncenter wp-image-4695 size-full"
+											src="./images/Days-in-month.png" alt="churn calculation by Stephen Noble of
+											Shopify" width="707" height="77" srcset="https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Days-in-month.png 707w, https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Days-in-month-300x33.png 300w"
+											sizes="(max-width: 707px) 100vw, 707px" /></p><br>
+									<p>Using the above formula, we get same <strong>0.05%</strong> of Probable Monthly
+										Churn for both months April and May which have similar churn as described by
+										data above.<br><br>
+										By multiplying Probable Monthly Churn with current customer count we
+										get the estimate count of customers who are likely to churn in next 30 days.
+										<br><br>This calculation will help you keep track of actual changes, customer
+										behavior
+										and improvement or decline in churn rate.
+									</p>
+
+									<h2 id="ccpai-index">Customer churn is a common problem across industries</h2>
+
+									<p>Several studies have been conducted to find the churn rate in various industries.
+										One such study is presented in (Shewan) that shows average
+										customer churn rates in a few common industries in the United States and
+										Europe.<br><br>
+										<b class="bmargin">Loss due to customer churn:</b>Companies lose more than <a
+											href="https://www.superoffice.com/blog/reduce-customer-churn/">1.6
+											Trillion
+											USD</a> per year due to customer churn. Among various sectors
+										studied, the
+										author presented that the highest churn rates are seen in subscriptions of <a
+											href="https://www.clickz.com/newspaper-publishers-dont-make-a-bad-situation-worse-part-2/73804/">daily
+											newspapers in the US</a> with 60%.<br><br><b class="bmargin"><a
+												style="text-decoration: none !important;"
+												href="https://www.profitwell.com/customer-retention/industry-rates">Banking
+												and Telcos sector:</a></b> Witness around 20-25% and 20-38% churn
+										respectively.
+										<a href="https://www.cobloom.com/blog/churn-rate-how-high-is-too-high">Software-as-a-Service
+											(SaaS)</a> companies reported churn rates of 5-7%. <br><br><b
+											class="bmargin"><a style="text-decoration: none !important;"
+												href="https://afpfep.org/wp-content/uploads/2018/04/2018-Fundraising-Effectiveness-Survey-Report.pdf">2018
+												Fundraising Effectiveness Survey Report:</a></b> Another sector that has
+										quite
+										high churn is the not-for-profit organizations. In not-for-profit
+										organizations it is 45.5% in 2018 where Donor
+										retention is the key towards ensuring the future financial stability.<br><br> It
+										has
+										been observed that most mid-value, high-value and bequest giving comes from
+										long-term, single-gift donors.
+									</p>
+									<br>
+									<p><img loading="lazy" style="border:1px solid black;"
+											class="size-medium wp-image-4669 aligncenter"
+											src="./images/Average-Churn-Rates-accross-various-other-industries-300x159.png"
+											alt="Average Churn Rates Across Various
+											Other Industries like " width="300" height="159"
+											srcset="https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Average-Churn-Rates-accross-various-other-industries-300x159.png 300w, https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Average-Churn-Rates-accross-various-other-industries-768x408.png 768w, https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Average-Churn-Rates-accross-various-other-industries.png 790w"
+											sizes="(max-width: 300px) 100vw, 300px" /></p>
+									<p style="text-align: center;"><strong>Fig 4. Average Churn Rates Across Various
+											Other Industries (<a
+											href="https://recurly.com/research/churn-rate-benchmarks/">Source</a>)</strong></p>
+
+									<h2 id="pcudm-index">Predicting churn using datascience &amp; Machine Learning</h2>
+
+									<p>Customer retention is considered as one of the major challenges in modern
+										business. Companies employ a vast range of practices to achieve it, varying from
+										AI based solutions that can predict which customers are more likely to churn.
+										<br><br>Thus retention efforts can be prioritized to focus on the most at
+										risk
+										customers.<br><br> <b>Churn modelling has been performed using two broad
+											approaches:</b>
+									<ul>
+										<li>machine learning techniques</li>
+										<li>survival analysis</li>
+									</ul>
+									There is no
+									single, fit-for-all methodology
+									that can work in all situations; either machine
+									learning models or survival regression could be appropriate based on the
+									application.<br><br><b class="bmargin">Machine learning methods:</b>Specifically
+									classification, have widely
+									been popular for predictive analytics due to their high performance and
+									ability
+									to handle complex relationships in data.<br><br> On the other hand,
+									<b>survival analysis
+										can provide valuable insights into questions such as which customers will
+										churn
+										in a particular time period.</b><br><br> In this article, we are majorly
+									focused on machine
+									learning based approaches, however you can find a research paper on survival
+									analyses approach towards the end of the article.
+									</p>
+
+									<ul class="list">
+										<li class="subheadli">
+											<h3 class="txtShadow">Data Quality Is Very Important & Any Data
+												Irregularities Can Topple Entire Analysis</h3>
+										</li>
+										<p>In order to perform churn analysis using predictive modelling techniques:
+										<ul>
+											<li><b>Define a churn metric</b>: Whether it is a binary
+												classification problem or there is something more to it? The definition
+												can
+												vary
+												depending on business requirements and problem context. Once the churn
+												metric is
+												defined</li>
+											<br>
+											<li><b>Clean the data</b>:It may involve dealing
+												with missing data, Identifying &amp; dealing with outliers in the,
+												removing
+												the
+												inconsistencies between features e.g., deceased date is populated, but
+												deceased
+												status is false. (<a
+													href="https://machinelearningmastery.com/books-on-data-cleaning-data-preparation-and-feature-engineering/">Resources
+													to learn more about data cleaning</a>)</p>
+											</li>
+										</ul>
+										<br>
+										<li class="subheadli">
+											<h3 class="txtShadow">EDA & Feature Engineering Are Key To A Better
+												Performing Machine Learning Model</h3>
+										</li>
+										<p><b class="bmargin">Exploratory Data Analysis (EDA):</b><a
+												href="https://machinelearningmastery.com/understand-problem-get-better-results-using-exploratory-data-analysis/">Exploratory
+												Data Analysis (EDA),</a> where we visually explore the cleaned data
+											to
+											identify all interesting data patterns or correlations of various
+											features with
+											the churn customers.<br><br> This will give us a brief understanding on what
+											features in
+											the data are better capable of explaining churn and what features are not.
+											With
+											the inputs from EDA we proceed to <a
+												href="https://machinelearningmastery.com/discover-feature-engineering-how-to-engineer-features-and-how-to-get-good-at-it/">feature
+												engineering</a>, where we generate additional set of features from the
+											already existing features.<br><br><b class="bmargin">Exploratory Data
+												Analysis (EDA):</b> Features generated in the Feature
+											engineering
+											stage
+											are supposed to magnify the data patterns leading to churn. This in turn
+											helps
+											the machine learning model to be able to easily learn these data
+											patterns
+											and
+											then predict the customers who are at risk of churn more accurately.
+											(<a
+												href="https://machinelearningmastery.com/books-on-data-cleaning-data-preparation-and-feature-engineering/">Resources
+												to learn about feature engineering</a>)
+										</p>
+										<p><b class="bmargin">For example:</b> Customer behavior with time is a good
+											indicator of weather the
+											customer will churn in future or not. So looking at customer activity during
+											entire customer tenure as a feature may not help model so much.<br><br>
+											<b>If we create
+												separate features for customer activity in various time periods
+												like:</b>
+										<ul class="mylist">
+											<li>Last week</li>
+											<li>Last week to month</li>
+											<li>Last month to last 3 months etc.</li>
+										</ul>
+										It will help model
+										identify customers who are on a decreasing trend of activity and then be
+										able to
+										predict risk of churn more accurately.</p>
+										<p><b class="bmargin">Figure 2 Description:</b> It describes all major steps
+											involved in predictive analytics using
+											machine
+											learning.<br><br> <b>It starts with:</b>
+										<ul class="mylist">
+											<li>Collection of data (that may come from multiple
+												sources)</li>
+											<li>Pre-processing steps that involve data
+												cleaning.</li>
+											<li>Feature generation via feature engineering and feature selection where
+												significant features are retrieved</li>
+											<li>Actual training process
+												where a machine learning algorithm can be employed</li>
+											<li>Model is
+												evaluated through metrics such as Precision, Accuracy, F1-score etc.
+											</li>
+										</ul>
+
+										For more and detailed understanding about churn prediction, please take a
+										look at
+										the following case study of churn analysis developed by Perceptive
+										Analytics.<br><br> And
+										also a <a
+											href="https://www.kdnuggets.com/2019/05/churn-prediction-machine-learning.html">blog
+											post</a> by KDnuggets ‘Customer Churn Prediction using Machine
+										Learning’,
+										detailing about the process of churn prediction.
+										</p>
+
+										<p><img loading="lazy" style="border:1px solid black;"
+												class="size-medium wp-image-4670 aligncenter"
+												src="./images/A-Machine-learning-based-predictive-analytics-300x165.png"
+												alt="Machine learning" width="300" height="165"
+												srcset="https://www.perceptive-analytics.com/wp-content/uploads/2022/02/A-Machine-learning-based-predictive-analytics-300x165.png 300w, https://www.perceptive-analytics.com/wp-content/uploads/2022/02/A-Machine-learning-based-predictive-analytics-768x423.png 768w, https://www.perceptive-analytics.com/wp-content/uploads/2022/02/A-Machine-learning-based-predictive-analytics-1024x564.png 1024w, https://www.perceptive-analytics.com/wp-content/uploads/2022/02/A-Machine-learning-based-predictive-analytics.png 1057w"
+												sizes="(max-width: 300px) 100vw, 300px" /></p>
+										<p style="text-align: center;"><strong>Fig 5. A Machine Learning based
+												Predictive
+												Analytics</strong></p>
+										<br>
+										<li class="subheadli">
+											<h3 class="txtShadow">Commonly Faced Challenges During Churn Analysis</h3>
+										</li>
+									</ul>
+									<ul>
+										<li><strong class="bmargin">Data Quality:</strong>
+											<p>Data Quality issues can lead your analysis to very strange
+												outcomes. <br><br>
+												<b>Some of commonly known data quality issues are:</b>
+											<ul class="mylist">
+												<li>Duplicate data</li>
+												<li>Incomplete data</li>
+												<li>Inconsistent data types</li>
+												<li>Inconsistent measurement units(Lenth in feet and width in meters)
+												</li>
+												<li>Possibility of human error during the
+													analysis</li>
+											</ul>
+											</p>
+										</li>
+
+										<li><strong class="bmargin">Outliers:</strong>
+											<p>Outliers also pay potential threat to any analysis; it is very
+												crucial during the data cleaning stage to<a
+													href="https://machinelearningmastery.com/how-to-identify-outliers-in-your-data/">
+													identify all the possible outliers</a> and then take necessary
+												action on the
+												same before proceeding with analysis.Outliers in data can skew the
+												complete
+												analysis and its outcomes.</p>
+										</li>
+										<br>
+										<li><a style="text-decoration: none !important;color:black;" class="bmargin"
+												href="https://machinelearningmastery.com/tactics-to-combat-imbalanced-classes-in-your-machine-learning-dataset/"><strong>Data</strong>
+												<strong>Imbalance:</strong></a>
+											<p>Imbalance is another important challenge that needs to
+												be addressed for better model performance. Data imbalance is when the
+												classes in
+												your target variable are unevenly distributed.<br><br> In churn
+												prediction data, the no
+												of customer who have churned will always be significantly less than
+												customers
+												who have not churned (Ex: 1 in every 10 customers may
+												churn).
+
+											</p>
+										</li>
+									</ul>
+									<b class="bmargin">There are several
+										data over-sampling and under-sampling techniques like:</b>
+									<ul class="mylist">
+										<li><a
+												href="https://machinelearningmastery.com/smote-oversampling-for-imbalanced-classification/">Synthetic
+												Minority Oversampling Technique (SMOTE)</a></li>
+										<li><a
+												href="https://medium.com/@ruinian/an-introduction-to-adasyn-with-code-1383a5ece7aa#:~:text=ADASYN%20(Adaptive%20Synthetic)%20is%20an,%E2%80%9Charder%20to%20learn%E2%80%9D%20examples.">Adaptive
+												Synthetic Sampling Method (ADASYN)</a></li>
+									</ul>
+
+									<p>which can be used to
+										tackle the
+										data imbalance challenge.<br><br> Some of the machine learning
+										techniques like ensemble
+										modelling are inherently capable of handling data imbalance and be
+										able
+										to
+										perform better even without data over-sampling or
+										under-sampling. A by
+										Ghent
+										University to understand more about data imbalance techniques in churn
+										analysis.</p>
+
+									<p>Sometimes when you have vast customer data it requires huge computational
+										resources to analyze entire data.<br><br>
+										<b class="bmargin">That is when you do:</b>
+									<ul class="mylist">
+										<li>sampling of the
+											data to get a sample from the whole data</li>
+										<li>perform all the analysis</li>
+										<li>modelling on the sample data to get the insights.</li>
+									</ul>
+									Sampling needs
+									to be
+									done very carefully by making sure that the derived sample is a proper
+									representation of population data. There is a chance that sample may miss out
+									patterns related to certain segments of customers who are very prone to churn.
+									</p>
+									<p>During feature engineering &amp; training the machine learning model one has to
+										make sure that the independent features passed on to the model training are
+										not
+										directly related to dependent feature. <br><br><b class="bmargin">For
+											example:</b> Dependent
+										column
+										‘IsChurn’ :
+									<ul class="mylist">
+										<li>1 for churn</li>
+										<li>0 not churn</li>
+									</ul>
+									And some independent column ‘CustomerStatus’ :
+									Active and Inactive., there is very good chance that all the inactive customers
+									are churned customers.<br><br> In this case model will only predict churn only
+									based
+									‘CustomerStatus’ feature alone but nothing else, which will fail to give us
+									actual understanding of what factors are contributing to churn.
+									</p>
+									<p><b>Once the model is trained and deployed to identify customers at risk of churn
+											on
+											real time basis, we need to maintain the trained model with latest data.</b>
+										So, the
+										model won’t miss out on any new emerging customer behavioral trends from the
+										latest data, but learn and to predict more accurately for a long time.</p>
+									<p>Here we are presenting a few approaches that have been employed to predict
+										customer churn using machine learning and data analytics methodologies:</p>
+
+									<h2 id="cisi-index">Churn in saas industry</h2>
+
+									<ul class="list">
+										<li class="subheadli">
+											<h3 class="txtShadow">Saas Is How Modern Businesses Function</h3>
+										</li>
+										<p>Software as a Service (SaaS) market mainly consists of consumers purchasing
+											cloud-based software services and solutions on a subscription or pay per use
+											basis.<br><br><b>Typically, SaaS software services can be: </b>
+										<ul class="mylist">
+											<li>B2B</li>
+											<li>B2C</li>
+										</ul>
+										And
+										consumers
+										can access these software services over the internet, mostly via a
+										browser. <br><br>
+										SaaS
+										offers a wide range of advantages to consumers like lower initial capital
+										requirements, auto updates &amp; maintenance, flexibility, and easy
+										scalability
+										etc., For more about SaaS find this <a
+											href="https://empireflippers.com/saas-business-model-explained/">article
+											by
+											Greg Elfrink</a>.
+										</p>
+										<b><a class="bmargin"
+												href="https://www.gartner.com/en/newsroom/press-releases/2021-04-21-gartner-forecasts-worldwide-public-cloud-end-user-spending-to-grow-23-percent-in-2021">Gartner
+												forecasts:</a></b>
+										Global public cloud end-user spending will grow by 47% to
+										$397
+										billion and Software as a Service (SaaS) is expected to be the largest cloud
+										market segment with $145 billion by the year 2022.<br><br> <b>Certain
+											services
+											in
+											SaaS are
+											expected to be growing at higher rate</b> than others as shown below,
+										</p>
+										<p><img style="border:1px solid black;" loading="lazy"
+												class="size-medium wp-image-4671 aligncenter"
+												src="./images/Hubspot-300x234.png" alt="Hubspot"
+												width="300" height="234"
+												srcset="https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Hubspot-300x234.png 300w, https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Hubspot-768x599.png 768w, https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Hubspot-1024x799.png 1024w, https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Hubspot-1080x842.png 1080w, https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Hubspot.png 1082w"
+												sizes="(max-width: 300px) 100vw, 300px" /></p>
+												<p style="text-align: center;">
+													<strong style="text-align: center;">Image Credit &#8211;<a
+															href="https://cdn2.hubspot.net/hubfs/2093754/eBooks/2020 SaaS Trends Report.pdf">
+															Hubspot </a></strong>
+												</p>
+										<br>
+
+										<li class="subheadli">
+											<h3 class="txtShadow">Churn In Saas: Less Than 4% Is Ok, 4% To 7% Is Decent &
+												Greater Than 7% Is Not Good</h3>
+										</li>
+										<p>On an average SaaS industry enjoys lower customer churn rates when compared
+											to
+											most of other industries, but it does not mean SaaS companies can ignore
+											churn.
+											It is always important to compare business churn rates with industry
+											specific
+											average churn rates.<br>
+										<ul class="mylist">
+											<li><b class="bmargin">4%-7% Churn rate:</b>
+
+												<p>Among SaaS companies, 4%-7% churn rates is
+													considered as
+													decent , anything above that is a potential indicator for you to
+													deep
+													dive.</p>
+												<p> If
+													you are curious to know how your business compares to other similar
+													companies,
+													<a href="https://baremetrics.com/open-benchmarks">open
+														benchmarks</a> by
+													baremetrics shows average performance metrics of similar companies
+													based on
+													average revenue per user.
+												</p>
+											</li>
+											<li>
+												<b class="bmargin">Important Metrics:</b>
+
+												<p><a href="https://baremetrics.com/academy/saas-metrics">Churn</a> is
+													one of
+													the
+													most important metrics of a SaaS business alongside:
+												<ul class="mylist">
+													<li>Monthly
+														Recurring
+														Revenue
+														(MRR)</li>
+													<li>Annual Recurring Revenue (ARR)</li>
+												</ul>
+												</p>
+
+
+												No matter how small the
+												churn
+												rate is
+												no SaaS company should ignore churn, when ignored it can consume your
+												recurring
+												revenue to an extent that your SaaS business may no longer be
+												sustainable.
+
+
+											</li>
+											<li>
+												<b class="bmargin">Above 2% Churn:</b>
+
+												If a SaaS company’s net revenue churn is above 2% each month, <a
+													href="https://www.forentrepreneurs.com/saas-metrics-2/">it indicates
+													a
+													fault
+													within the company</a> that needs to be fixed. More than
+												two-thirds
+												of SaaS
+												companies had an annual churn rate of <a
+													href="https://www.slideshare.net/totango/5th-annual-saas-metrics-report">5%
+													or more in a given year</a>.<br><br>
+												<p>To get a deeper understanding of churn in SaaS Industry, go through
+													the
+													following
+													<a
+														href="https://www.cobloom.com/blog/churn-rate-how-high-is-too-high">blog
+														post</a> which summarizes the results of 6 best Surveys
+													conducted by
+													various
+													individuals on churn in SaaS Industry.
+												</p>
+											</li>
+										</ul>
+										Here’s what is happening to your active subscriptions even with those
+										so-called
+										good churn rates.
+										</p>
+
+
+
+										<p><img style="border:1px solid black;" loading="lazy"
+												class="size-medium wp-image-4672 aligncenter"
+												src="./images/Percentage-of-Active-subsriptions-by-the-end-of-12-months-300x173.png"
+												alt="Subscription percentage" width="300" height="173"
+												srcset="https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Percentage-of-Active-subsriptions-by-the-end-of-12-months-300x173.png 300w, https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Percentage-of-Active-subsriptions-by-the-end-of-12-months-768x442.png 768w, https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Percentage-of-Active-subsriptions-by-the-end-of-12-months-1024x590.png 1024w, https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Percentage-of-Active-subsriptions-by-the-end-of-12-months.png 1073w"
+												sizes="(max-width: 300px) 100vw, 300px" /></p>
+										<p style="text-align: center;"><strong>Fig. Percentage of Active subscriptions
+												by
+												the end of 12 months (</strong><a
+												href="https://cdn2.hubspot.net/hubfs/120299/ChurnEbookFinal.pdf?__hstc=174954301.bddc295b6145f3b334433570e624aab3.1628659659018.1628840722434.1628854600470.4&amp;__hssc=174954301.9.1628854600470&amp;__hsfp=1704303559"><strong>By
+													Hubspot</strong></a><strong>)</strong></p>
+
+										<li class="subheadli">
+											<h3 class="txtShadow">Revenue Churn Is Equally If Not More Important Than
+												Customer Churn In Saas</h3>
+										</li>
+										<p>When it comes to SaaS, there are <b>two types of churn</b> that are
+											important:
+										<ul>
+											<b>
+												<li>Customer Churn</li><br>
+												<li>Revenue Churn</li>
+											</b>
+										</ul> Revenue Churn another type of churn and is the total
+										revenue that business has lost within a given period of time.<br><br> It can be
+										measured
+										in terms of lost Monthly Recurring Revenue (MRR) or Annual Recurring Revenue
+										(ARR). Revenue churn doesn’t always imply losing customers but only means that
+										revenue has declined.<br><br><b>Customer churn only considers the customers who
+											are
+											no
+											longer in association with the business</b>, whereas revenue churn will take
+										into
+										account factors like cancelled customers, downgraded subscriptions and any other
+										factors that are leading to loss of revenue.</p>
+										<p>For Example, <b>losing a customer with $100/month plan is not same as losing
+												a
+												customer with $1000/month plan</b>, this difference is captured in
+											revenue
+											churn but
+											not in customer churn.</p>
+										<li class="subheadli">
+											<h3 class="txtShadow">Churn Calculation In Saas</h3>
+										</li>
+										<p><b>There are variety of SaaS companies, and each calculates churn rates
+												differently</b>,
+											all those different approaches are based on and slight variants of simple
+											concept of percentage of customers that leave your service.<br><br> It is
+											important for
+											a company to make sure that churn rates are calculated properly but at the
+											same
+											time they are not over complicating the calculation.</p>
+										<br>
+										<p><img style="border:1px solid black;" loading="lazy"
+												class="wp-image-4696 size-full aligncenter"
+												src="./images/Customer-churn-rate.png"
+												alt="Customer churn rate" width="585" height="190"
+												srcset="https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Customer-churn-rate.png 585w, https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Customer-churn-rate-300x97.png 300w"
+												sizes="(max-width: 585px) 100vw, 585px" /></p>
+										<br>
+										<p>‘<a
+												href="https://cdn2.hubspot.net/hubfs/120299/ChurnEbookFinal.pdf?__hstc=174954301.bddc295b6145f3b334433570e624aab3.1628659659018.1628840722434.1628854600470.4&amp;__hssc=174954301.9.1628854600470&amp;__hsfp=1704303559">43
+												ways to calculate SaaS Churn</a>’ by Hubspot will help you understand
+											all
+											the elements that are needed to calculate SaaS churn accurately by keeping
+											it
+											simple at the same time.</p>
+
+										<li class="subheadli">
+											<h3 class="txtShadow">Good Churn Plateaus With Time, But Bad Churn Will
+												Continually Lose Your Customers</h3>
+										</li>
+										<p><b>Some of the newly acquired customers of yours may leave you</b> not
+											because
+											your
+											product is not up to the mark, but rather just that the product is not very
+											appropriate to their use case. This type of churn is known as good
+											churn.<br><br> If you
+											have <b>good churn, you may lose customer initially, but eventually you will
+												stop
+												losing customers and the customers that stay are happy with your
+												product.</b></p>
+										<p>On the other hand, <b>bad churn is when you keep losing customers
+												continually</b>. The
+											retention continually slopes down to zero and after a certain while everyone
+											who
+											joined at a certain point in time is going to be churn out of your service.
+										</p>
+										<br>
+										<p><img style="border:1px solid black;" loading="lazy"
+												class="size-medium wp-image-4673 aligncenter"
+												src="./images/Good-churn-vs-bad-churn-300x176.png"
+												alt="Good churn vu bad churn" width="300" height="176"
+												srcset="https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Good-churn-vs-bad-churn-300x176.png 300w, https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Good-churn-vs-bad-churn-768x450.png 768w, https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Good-churn-vs-bad-churn-1024x600.png 1024w, https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Good-churn-vs-bad-churn.png 1054w"
+												sizes="(max-width: 300px) 100vw, 300px" /></p>
+										<p style="text-align: center;"><strong>Fig. </strong><a
+												href="https://cdn2.hubspot.net/hubfs/120299/ChurnEbookFinal.pdf?__hstc=174954301.bddc295b6145f3b334433570e624aab3.1628659659018.1628840722434.1628854600470.4&amp;__hssc=174954301.9.1628854600470&amp;__hsfp=1704303559"><strong>Good
+													Churn Vs Bad Churn</strong></a></p>
+										<br>
+										<li class="subheadli">
+											<h3 class="txtShadow">Three Stages Of Saas Churn And How To Improve Churn In
+												Each Stage</h3>
+										</li>
+										<p>SaaS churn can be categorized into three different stages and churn in each
+											of
+											these stages needs to be treated differently:</p>
+
+										<li class="subheadli">
+											<h3 class="txtShadow">Short-term Churn: Targeting Right Customers Is The Key
+												To Reduce Short Term Churn</h3>
+										</li>
+										<p>When customers cancel their subscription within the first one or two months.
+											Churn rates will be higher in this shot term period.<br><br> This is when
+											the
+											customer
+											will try to figure out core value your product/service has to offer, and
+											they
+											will churn out quickly if they value is not up to their expectation.</p>
+										<br>
+										<p><img style="border:1px solid black;" loading="lazy"
+												class="size-medium wp-image-4674 aligncenter"
+												src="./images/Short-term-churn-300x126.png"
+												alt="Short term churn" width="300" height="126"
+												srcset="https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Short-term-churn-300x126.png 300w, https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Short-term-churn-768x323.png 768w, https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Short-term-churn.png 931w"
+												sizes="(max-width: 300px) 100vw, 300px" /></p>
+										<p style="text-align: center;"><strong>Fig. Short Term Churn</strong></p>
+										<br>
+										<p>Churn in this period is very important and improving short term churn can
+											have
+											great impact on churn rates throughout the customer life cycle.<br><br>
+											<b>To
+												improve short
+												term churn, it is important to target the right customers and then
+												demonstrate
+												the customers all the core values of product as quickly as possible.</b>
+										</p>
+
+										<li class="subheadli">
+											<h3 class="txtShadow">Mid-term Churn: Keep Your Customers Engaged To Reduce
+												Mid-term Churn</h3>
+										</li>
+										<p>Churn after the first one or two months is called mid-term churn. Customers
+											who
+											have found value of your product in the short-term phase will move on to
+											mid-term phase.<br><br> In this phase you are looking to slow the churn rate
+											and
+											flatten
+											the churn rate, which tells those customers are continuing to use product.
+										</p>
+										<br>
+										<p><img style="border:1px solid black;" loading="lazy"
+												class="size-medium wp-image-4675 aligncenter"
+												src="./images/Mid-term-churn-300x125.png"
+												alt="Mid term churn" width="300" height="125"
+												srcset="https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Mid-term-churn-300x125.png 300w, https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Mid-term-churn-768x320.png 768w, https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Mid-term-churn.png 948w"
+												sizes="(max-width: 300px) 100vw, 300px" /></p>
+										<p style="text-align: center;"><strong>Fig. Mid Term Churn</strong></p>
+										<p><b>In order to improve the mid-term churn, it is important to keep the
+												customers
+												interacting and engaged with your product/service.</b><br><br> You can
+											add
+											new set
+											of small
+											features to the product around same core value, refine already existing
+											features, improving customer service to make your product even easier to
+											use.
+										</p>
+
+										<li class="subheadli">
+											<h3 class="txtShadow">Long-term Churn: Product Development And Service
+												Improvements Are Vital In This Stage</h3>
+										</li>
+									</ul>
+									<p>Long term churn is when the customer has successfully moved on from mid-term
+										phase and has developed a strong relation with your product/service. <b>Having a
+											good long term churn rates conveys that the customers are really finding
+											value
+											in the product/service that is offered.</b></p>
+									<br>
+									<p><img style="border:1px solid black;" loading="lazy"
+											class="size-medium wp-image-4676 aligncenter"
+											src="./images/Long-term-churn-300x144.png"
+											alt="Long term churn" width="300" height="144"
+											srcset="https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Long-term-churn-300x144.png 300w, https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Long-term-churn-768x367.png 768w, https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Long-term-churn.png 813w"
+											sizes="(max-width: 300px) 100vw, 300px" /></p>
+									<p style="text-align: center;"><strong>Fig. Long Term Churn</strong></p>
+									<br>
+									<p>One way to improve your long-term churn is by asking your established customers
+										to upgrade to better plans or editions. When there is constant product
+										development with new capabilities and features, upgraded customers will get to
+										experience core value of product once again.<br><br> You can also reintroduce
+										your new
+										features to some of the inactive accounts to help them know the value of your
+										service better.</p>
+									<p>By making necessary improvements at every stage of SaaS churn, you are helping
+										customers to understand the true value of your product or service, which helps
+										in generating more Revenue Per User and possibly net negative churn.</p>
+									<p><b>Negative churn is when the amount of new revenue from your existing customers
+											upgrades &amp; cross-sells is greater than the revenue that you lose from
+											cancellations and downgrades.</b></p>
+									<br>
+									<p><img style="border:1px solid black;" loading="lazy"
+											class="aligncenter wp-image-4697 size-full"
+											src="./images/Net-negative-revenue.png"
+											alt="Net negative revenue" width="478" height="75"
+											srcset="https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Net-negative-revenue.png 478w, https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Net-negative-revenue-300x47.png 300w"
+											sizes="(max-width: 478px) 100vw, 478px" /></p>
+									<br>
+									<p>To understand more above negative churn and how to achieve the same, take a look
+										at the following blog post ‘<a
+											href="https://baremetrics.com/blog/negative-churn">What is Negative
+											Churn</a>’ by baremetrics.</p>
+
+									<h2 id="pttiyscr-index">Practical tips to improve your saas churn rates</h2>
+
+									<ul class="list">
+										<li class="subheadli">
+											<h3 class="txtShadow">Companies With Higher Average Revenue Per User (ARPU)
+												Observe Less Churn</h3>
+										</li>
+										<p>We can see that companies with <b>ARPU &gt; $500 have a significantly less
+												revenue
+												churn.</b></p>
+										<br>
+										<p><img style="border:1px solid black;" loading="lazy"
+												class="size-medium wp-image-4677 aligncenter"
+												src="./images/Churn-correlates-with-ARPU-per-month-300x169.png"
+												alt="ARPU" width="300" height="169"
+												srcset="https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Churn-correlates-with-ARPU-per-month-300x169.png 300w, https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Churn-correlates-with-ARPU-per-month.png 600w"
+												sizes="(max-width: 300px) 100vw, 300px" /></p>
+												<p style="text-align: center;">
+												
+													<strong style="text-align: center;">Image Credit – Profitwell</strong>
+												</p>
+										<br>
+										<li class="subheadli">
+											<h3 class="txtShadow">Longer Contracts Reduce Churn</h3>
+										</li>
+
+										<p>When majority of the customer base is having annual or higher term contracts,
+											such companies observe lower churn rates.</p>
+										<br>
+										<p><img style="border:1px solid black;" loading="lazy"
+												class="size-medium wp-image-4678 aligncenter"
+												src="./images/Annual-contract-300x153.png"
+												alt="Annual contract" width="300" height="153"
+												srcset="https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Annual-contract-300x153.png 300w, https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Annual-contract.png 599w"
+												sizes="(max-width: 300px) 100vw, 300px" /></p>
+												<p style="text-align: center;">
+													<strong style="text-align: center;">Image Credit – Profitwell</strong>
+												</p>
+										<br>
+										<li class="subheadli">
+											<h3 class="txtShadow">Experienced Companies Observe Significanlty Lower Churn
+												Than Others</h3>
+										</li>
+
+										<p><b>Companies which are 3 years old observe  churn rate somewhere in range 4%
+												&#8211;
+												24%</b> where as companies which are 10 years old are observing churn
+											rate
+											between
+											2% &#8211; 4% range.</p>
+										<br>
+										<p><img style="border:1px solid black;" loading="lazy"
+												class="size-medium wp-image-4679 aligncenter"
+												src="./images/Churn-strongly-correlates-with-company-age-300x169.png"
+												alt="Company age" width="300" height="169"
+												srcset="https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Churn-strongly-correlates-with-company-age-300x169.png 300w, https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Churn-strongly-correlates-with-company-age.png 599w"
+												sizes="(max-width: 300px) 100vw, 300px" /></p>
+												<p style="text-align: center;">
+													<strong style="text-align: center;">Image Credit – Profitwell</strong>
+												</p>
+										<br>
+
+										<li class="subheadli">
+											<h3 class="txtShadow">Having Transactional Difficulties Can Lead To Higher
+												Churn</h3>
+										</li>
+										<p>Studies show that credit card failure during the payment process has a
+											significant impact on the churn. <b>By fixing payment related issues
+												companies
+												can
+												reduce churn by about 20%-40%.</b></p>
+										<br>
+										<p><img style="border:1px solid black;" loading="lazy"
+												class="size-medium wp-image-4680 aligncenter"
+												src="./images/Failed-credit-cards-300x147.png"
+												alt="Overall churn" width="300" height="147"
+												srcset="https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Failed-credit-cards-300x147.png 300w, https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Failed-credit-cards-768x376.png 768w, https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Failed-credit-cards.png 988w"
+												sizes="(max-width: 300px) 100vw, 300px" /></p>
+												<p style="text-align: center;">
+													<strong style="text-align: center;">Image Credit – Profitwell</strong>
+												</p>
+										<br>
+										<p><a href="https://accelerateagency.ai/how-to-reduce-customer-churn">17 more
+												ways
+												to reduce your SaaS Customer Churn</a> a blog post by Accelerateagency.
+										</p>
+
+										<h2 id="citi-index">Churn in telecom industry</h2>
+
+										<p>Churn in Telecom industry is when customers cancel or ends the subscription
+											service. <a
+												href="https://wp.nyu.edu/adityakapoor/2017/02/17/churn-in-the-telecom-industry-identifying-customers-likely-to-churn-and-how-to-retain-them/">Studies</a>
+											show that top 4 telecom carriers in US lose about $260M USD per
+											month.<br><br>
+											Telecom
+											Industry is one of the major sectors in which a lot of efforts have been
+											employed to determine the factors that can prove vital for customer
+											retention.<br><br>
+											<a
+												href="https://telecoms.com/opinion/churn-is-breaking-the-telecoms-market-heres-how-to-fix-it/">Study</a>
+											performed on top Canadian telecom providers (BCE &amp; Telus) has identified
+											that cost to retain the old customers is 50 times less than cost to acquire
+											new
+											customer.<br><br> Several predictive models have been developed to predict
+											the
+											dissatisfied customers who are likely to change the service provider. The
+											major
+											factors of customer dissatisfaction that sometimes result in churn, are:
+										<ul class="mylist">
+											<li>poor
+												network quality</li>
+											<li>call cost</li>
+											<li>lack of value-added
+												services</li>
+											<li>Support</li>
+											<li>Customer service response time</li>
+										</ul>
+
+										These
+										factors
+										have
+										been employed with several learners such as support vector machines, neural
+										networks, as decision trees, probabilistic models such as Bayes, etc. Here a
+										brief overview of major works related to churn prediction in the Telecom
+										industry is presented.
+										</p>
+										<p>A wide variety of machine learning methodologies have been applied to perform
+											customer churn in the Telecom industry.<br><br><b>These methodologies can
+												broadly
+												be
+												categorized into:</b>
+										<ul>
+
+											<li><b>Traditional Predictors</b> (such as Decision Tree, Support
+												Vector Machine Neural Networks)</li>
+											<br>
+											<li><b>Ensemble Based Predictors</b> (Bagging,
+												Boosting, Stacking etc)</li>
+											<br>
+											<li><b>Predictors with Sampling and Feature Engineering</b></u>
+												(S&amp;FE)</li>
+											<br>
+											<li><b>Rule Induction Predictors</b> (RI), <u>Deep Learning based
+													Predictors</u> and Other</li>
+											<br>
+											<li><b>Miscellaneous Approaches</b> (Misc).</li>
+										</ul>
+										</p>
+										<ul class="list">
+											<li class="subheadli">
+												<h3 class="txtShadow">Telecom Churn Related Research Articles</h3>
+											</li>
+											<ul>
+												<li>
+													<b class="bmargin">Mr. Shyam V. Nath:</b>
+													<p>One of the earliest work published about Churn Prediction in
+														Telecom was
+														by
+														Mr. Shyam V. Nath, where author presented <a
+															style="color: black; text-decoration: underline;"
+															href="https://www.researchgate.net/profile/Ravi-Behara/publication/228411974_Customer_churn_analysis_in_the_wireless_industry_A_data_mining_approach/links/00b4953b55d62a3168000000/Customer-churn-analysis-in-the-wireless-industry-A-data-mining-approach.pdf">Naıve
+															Bayesian (NB) on the Teradata Duke Dataset</a> using
+														Customer
+														Demographic
+														Data, reporting an accuracy of 68%.
+													</p>
+												</li>
+												<br>
+												<li>
+													<b class="bmargin">Xia and Jin [2008]</b>
+													<p>
+														Similarly Xia and
+														Jin
+														[2008] performed experiments on the UCI Dataset and
+														the
+														Home Telecommunication Carrier dataset and achieved an accuracy
+														of 90.9%
+														<a style="color: black; text-decoration: underline;"
+															href="https://www.sciencedirect.com/science/article/abs/pii/S187486510960003X?via%3Dihub">using
+															SVM Radial Basis Function (RBF) kernel.</a>
+													</p>
+												</li><br>
+												<li>
+													<b class="bmargin">Sharma and Kumar Panigrahi [2011]</b>
+													<p>One of the
+														earlier work
+														in churn
+														prediction using Neural Networks was presented by Sharma
+														and
+														Kumar Panigrahi [2011] who applied a <a
+															style="color: black; text-decoration: underline;"
+															href="https://digitalcommons.aaru.edu.jo/fcij/vol6/iss1/1/">Feed
+															Forward
+															Back Propagation (FFBP) Neural Network</a> on the UCI
+														dataset,
+														achieving an accuracy of 92.35%.</p>
+												</li>
+											</ul>
+
+											<p><u><a style="color: black; text-decoration: underline; font-weight: bold;"
+														href="https://www.analyticsvidhya.com/blog/2018/06/comprehensive-guide-for-ensemble-models/">Ensemble
+														techniques</a></u> have also been employed for churn prediction
+												in
+												Telecom. An ensemble model comprises multiple models that classify the
+												new set
+												of samples by taking vote on the predictions of constituent
+												models.<br><br> The
+												popular
+												ensemble based models, used for churn prediction in the telecom
+												industry,
+												include Bagging, Boosting and other hybrid models.
+											<ul>
+												<li>
+													<b class="bmargin">Mozer et al. [2000]:</b>
+													<p>
+														One of the <a style="color: black; text-decoration: underline;"
+															href="https://ieeexplore.ieee.org/abstract/document/846740">earliest
+															work</a> reported in the churn prediction in telecom
+														industry using
+														ensemble
+														is Mozer et al. [2000] who explored techniques
+														including Linear
+														Regression, Decision Tree, NN along with Adaptive Boosting
+														(AdaBoost) on
+														a US
+														telecom company dataset.
+													</p>
+												</li>
+
+											</ul>
+
+
+											In more recent studies, nested
+											ensemble
+											techniques have
+											also been reported to produce very good results:<br><br>
+											<ul>
+												<li>
+													<b class="bmargin">Mehreen
+														et al,
+														2018:</b>
+													<p>Mehreen
+														et al,
+														2018 is one such example, who suggested two such models
+														named as <a style="color: black; text-decoration: underline;"
+															href="https://www.worldscientific.com/doi/10.1142/S2424922X17500073">Boosted-Stacked
+															learners and Bagged-Stacked learners</a><u>, </u>performed
+														experiments
+														publicly available UCI Churn Dataset, reporting the accuracy of 
+														98.4%.</p>
+												</li>
+												<br>
+												<li>
+													<b class="bmargin">Paper:</b>
+													<p>
+														The following paper “<a
+															style="color: black; text-decoration: underline;"
+															href="https://journalofbigdata.springeropen.com/articles/10.1186/s40537-019-0191-6">Customer
+															Churn Prediction in Telecom using Machine Learning in Big
+															Data
+															Platform”,</a> uses Social Network Analysis (SNA) features
+														in
+														the
+														prediction model and demonstrated an increase in performance of
+														the
+														model from
+														84 to 93.3% when employed on data provided by SyriaTel telecom
+														company.
+													</p>
+												</li>
+											</ul>
+											<b>Social Network Analysis (SNA) features are used to summarize
+												the
+												connections
+												between every two customers and build a social network
+												graph(viz)</b> based
+											on the
+											original data.
+											</p>
+
+											<p>They used:
+											<ul class="mylist">
+												<li>Decision Tree</li>
+												<li>Random Forest</li>
+												<li>Gradient</li>
+												<li>Boosted Machine Tree GBM</li>
+												<li>Extreme Gradient</li>
+											</ul>
+											Boosting XGBOOST, of which XGBOOST model
+											with Social
+											Network Analysis (SNA) features has overperformed all other models.</p>
+											<br>
+											<p><img style="border:1px solid black;" loading="lazy"
+													class="size-medium wp-image-4681 aligncenter"
+													src="./images/Sample-social-network-graph-300x236.png"
+													alt="social network graph" width="300" height="236"
+													srcset="https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Sample-social-network-graph-300x236.png 300w, https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Sample-social-network-graph-768x604.png 768w, https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Sample-social-network-graph-1024x806.png 1024w, https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Sample-social-network-graph-1080x850.png 1080w, https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Sample-social-network-graph.png 1181w"
+													sizes="(max-width: 300px) 100vw, 300px" /></p>
+											<p style="text-align: center;"><strong>Fig. Sample Social Network Graph of
+													Telecom
+													Customers Interactions (each point is a customer)</strong></p>
+											<br>
+											<p>In the above below, Panel:
+											<ul class="mylist" style="list-style: none;">
+												<li>(a) shows the improvement of churn predictive
+													model
+													using Statistical Features related to different historical periods,
+													panel </li>
+												<li>(b)
+													presents the changes in predictive model improvement using SNA
+													Features
+													related
+													to the same historical periods, and panel</li>
+												<li>(c) presents the enhancement
+													of churn
+													predictive model when using both statistical and SNA Features.</li>
+											</ul>
+											<img style="border:1px solid black;width: 80% !important;margin: 0 40px !important;" loading="lazy"
+												class="size-medium wp-image-4686 aligncenter"
+												src="./images/Various-model-performance-with-different-sets-of-features-300x89.png"
+												alt="Various model performance with different sets of features"
+												width="300" height="89"
+												srcset="https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Various-model-performance-with-different-sets-of-features-300x89.png 300w, https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Various-model-performance-with-different-sets-of-features-768x227.png 768w, https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Various-model-performance-with-different-sets-of-features-1024x303.png 1024w, https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Various-model-performance-with-different-sets-of-features-1080x320.png 1080w, https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Various-model-performance-with-different-sets-of-features.png 1418w"
+												sizes="(max-width: 300px) 100vw, 300px" />
+											<br>
+											<p style="text-align: center;"><strong>Fig. Various Model
+													Performance with Different sets of features</strong></p><br>
+											<ul>
+												<li>
+													<b class="bmargin">Mr. Debjyoti 2020:</b>
+													<p>
+														Another recent work “<a
+															style="color: black; text-decoration: underline;"
+															href="https://link.springer.com/article/10.1007/s11042-020-09658-z">Applying
+															over 100 classifiers for churn prediction in telecom
+															companies</a>”
+														is
+														presented by Mr. Debjyoti 2020, who presented an
+														exploratory
+														data analysis report for churn in Telecom, applying a large
+														number of
+														attributes, i.e. 57 attributes of 51,047 customers, with 114
+														different
+														classifiers, ranging from Decision Tree, SVM to various ensemble
+														based
+														methods.
+													</p>
+												</li>
+
+											</ul>
+											<p>
+												They concluded that ensemble approaches are the best performing
+												approaches in
+												this domain. There are not any notable works that employ deep
+												learning
+												techniques for Customer Churn.
+											</p>
+											<ul>
+												<li>
+													<b class="bmargin">Mr.Jain 2020:</b>
+													<p>In a recent study, “<a style="color: black;"
+															href="https://link.springer.com/article/10.1007/s11235-020-00727-0">Telecom
+															churn prediction and used techniques, datasets and
+															performance
+															measures: a
+															review</a>” by <strong>Mr.Jain 2020</strong>, enlisted the
+														<b>top
+															reason for
+															customer churn in telecom as follows:</b>
+													</p><br>
+													<ul class="mylist">
+														<li>Lack of engagement</li>
+														<li>Lack of promotion/or new offers</li>
+														<li>Lack of customer service support</li>
+														<li>High call rates or SMS charges</li>
+														<li>Non-payment bills, fraud, or misuses of services by
+															customers</li>
+
+														<li>Change of location or position</li>
+													</ul>
+												</li>
+
+											</ul>
+
+
+											</p>
+
+											<li class="subheadli">
+												<h3 class="txtShadow">Additional Resources: Datasets And Example
+													Tutorials</h3>
+											</li>
+										</ul>
+										<p>A few publicly available datasets have been used as a standard
+											in various studies. UCI dataset is the most frequently used dataset.
+											It is
+											artificially created based on the behavior observed in the real
+											world.<br><br>
+											The UCI
+											dataset has 20 attributes for 5,000 subscribers. The other popular
+											datasets
+											are:
+										</p>
+										<ul>
+											<li><b class="bmargin"><a style="color: black;"
+														href="https://www.sgi.com/tech/mlc/db">Churn
+														Prediction
+														Dataset:</a></b>
+												<p>Churn Prediction
+													Dataset, available at the University of
+													California
+													(UCI)
+													machine learning repository (henceforth mentioned as UCI Dataset).
+												</p>
+											</li>
+											<br>
+											<li><b class="bmargin">Teradata Duke Dataset:</b>
+												<p>Teradata Duke Dataset, a Churn dataset from Teradata Center for
+													Customer Care relationship management at Duke University</p>
+											</li><br>
+
+											<li><b class="bmargin"><a style="color: black;"
+														href="http://www.fuqua.duke.edu/centers/ccrm">KDD Cup 2009
+														datasets:</a></b>
+												<p>KDD Cup 2009
+													datasets,
+													the Knowledge Discovery &amp; Data Mining (KDD) Cup 2009 datasets
+													collected
+													from a French telecom company Orange.</p>
+											</li>
+											<br>
+											<p>There are many exam case studies, tutorials along with datasets that
+												demonstrate
+												how a Exploratory Data Analysis (EDA) and predictive modelling can be
+												performed.
+
+											</p>
+											<p>A few such Example Tutorials are enlisted here:</p>
+										</ul>
+
+										<ul>
+											<li><b class="bmargin">Kaggle:</b>
+												<a style="color: black;"
+													href="https://www.kaggle.com/blastchar/telco-customer-churn"><br>In
+													Telco
+													Customer Churn Dataset</a>, The raw data contains 7043 rows
+												(customers)
+												and 21 columns (features). The features mostly comprises Personal
+												and
+												Demographic information such as Gender, SeniorCitizen,
+												Dependants
+												etc. <br> Some Billing related information such as monthly
+												charges, total charges, payment method etc.<br><br>
+												Example Tutorial:<br> <a style="color: black;"
+													href="https://medium.com/swlh/classification-analysis-on-telco-customer-churn-a01599ad28d7">Classification
+													Analysis on Telco Customer Churn</a>
+											</li>
+											<br>
+											<li><b class="bmargin">Gradient Boosting:</b>
+												<p>EDA followed by predictive modelling using Gradient Boosting.</p>
+												<br>Example Tutorial: <br><a
+													style="text-decoration: none; color: black;"
+													href="https://www.kaggle.com/bandiatindra/telecom-churn-prediction">Telecom
+													Churn Prediction</a>.
+											</li>
+										</ul>
+
+										<p>EDA followed by predictive modelling using SVM, Logistic Regression, Random
+											Forest, AdaBoost, XGBoost</p>
+										<ul>
+											<li><b class="bmargin">Kaggle: Telecom Churn Dataset:</b>
+												<p>(Cleaned Orange Telecom Customer Churn
+													Dataset) The data contains 667 rows (customers) and 20 columns
+													(features).</p>
+											</li><br>
+											<li><b class="bmargin">Kaggle: <a style="color: black;"
+														href="https://www.kaggle.com/becksddf/churn-in-telecoms-dataset">Churn
+														in Telecom’s Dataset</a>:</b>
+												<p>Around 5000 rows (customers) and
+													21
+													columns
+													(features). The features mostly comprises call records
+													information
+													such as Total Call Minutes, Total Evening Minutes, Total Day Charge
+													etc.</p>
+												<p>Example Tutorial: Customer Churn Analysis</p>
+											</li><br>
+											<li><b class="bmargin">RStudio : <a style="color: black; font-weight: bold;"
+														href="https://blogs.rstudio.com/ai/posts/2018-01-11-keras-customer-churn/">IBM
+														Watson Telecom Churn Analysis:</a></b>A detailed churn analysis
+												from
+												scratch on IBM Watson telecom churn data,
+												involving data cleaning, feature engineering, modelling and
+												generating
+												insights
+												with access to all the code.
+											</li>
+										</ul>
+
+										<h2 id="cati-index">Most important features of churn analysis in telecom industry</h2>
+										<p>The churn datasets in Telecom domain have different attributes (features). In
+											the
+											paper “<a style="color: black;"
+												href="https://journalofbigdata.springeropen.com/articles/10.1186/s40537-019-0191-6">Customer
+												churn prediction in telecom using machine learning in big data
+												platform</a>”
+											by Ahmed and Afzal 2017.<br><br> They categorized the
+											features
+											used in
+											research related to Churn prediction into following broad categories</p>
+										<ul>
+											<li><b class="bmargin">Customer Demographic Data (CDD)</b>
+												<ul>
+													<li>Location Information such as State, Zip, apartment
+														house,
+														official accommodation etc.</li><br>
+													<li>Personal Information such as Age, number of children,
+														birthday, handset capabilities etc.</li>
+												</ul>
+											</li><br>
+											<li><b class="bmargin">Customer Service Usage Data (CSUD)</b>
+												<ul>
+													<li>Call Detail Records such as Call minutes, time and
+														charges,
+														Number of Calls to Customer Service, Number of service calls,
+														Number
+														of competitor service calls.</li><br>
+													<li>Call Message Records such as Outgoing/incoming number
+														of
+														SMS, Number of Voice-Mail Messages, Message sending times,
+														message,
+														sending times etc.</li>
+												</ul>
+											</li><br>
+											<li><b class="bmargin">Customer Account Data (CAD)</b>
+												<ul>
+													<li>Account Length, International Plan, Voicemail Plan</li>
+												</ul>
+											</li><br>
+											<li><b class="bmargin">Customer Billing and Purchase Data (CBPD)</b>
+												<ul>
+													<li>Number of recharges, Total recharged amount, Revenue in months,
+														Total revenue of last year, International calling fees, Count of
+														Overdue Payment etc.</li>
+												</ul>
+											</li><br>
+											<li><b class="bmargin">Customer Relation Data (CRD)</b>
+												<ul>
+													<li>The type, duration of complaints, and the number of days the
+														complaint lasted and if any money was refunded to the customer,
+														estimated time it will take to resolve a complaint by the
+														company
+														and how many days it was delivered late, the type of fault,
+														duration
+														of repairs, number of appointments and number of engineer visits
+														to
+														the site.</li>
+												</ul>
+											</li>
+										</ul>
+										<h2 id="cibs-index">Churn in banking sector</h2>
+										<p>Banking sector is among the top 5 industries where we observe higher customer
+											churn. Typically churn rate in banking would vary from 10% to
+											30%.<br><br>
+											Competitors
+											would be main reason of customer churn in banking, customers tend to
+											switch
+											banks based on factors like better service, use of latest technology,
+											reliability, Interest rates, service costs, location, customer satisfaction
+											and
+											various other benefits/services provided by bank. (Ex: Discounts on card
+											transactions etc.,).<br><br> Studies show that identifying the customers
+											who
+											are
+											at risk
+											and reaching out to them at the right time can avoid as much as 11% of
+											customer
+											churn in banking sector.
+										</p>
+										<p>We can define customer churn in banking sector as one of the following,</p>
+										<ul>
+											<li>Customer who has closed the bank account.</li><br>
+											<li>Customer who has not closed the account but didn’t make any sort of
+												transactions for a specific time period.</li><br>
+											<li>Customers who only use either 1 or 2 products/services offered by bank
+												out
+												of 10s of products/services.</li>
+										</ul>
+										<li class="subheadli">
+											<h3 class="txtShadow">Related Research Papers</h3>
+										</li>
+										<p>Many studies have been performed to analyze churn in the Banking sector
+											through
+											descriptive and predictive analytics.</p>
+										<ul>
+											<li>Oyeniyi &amp; A. B. Adeyemo published a paper on <a
+													style="color: black;"
+													href="https://www.semanticscholar.org/paper/Customer-Churn-Analysis-In-Banking-Sector-Using-Oyeniyi-Adeyemo/0fd0067775eef2aa52547229c17e06128fdc0633">Churn
+													Analysis in Banking Sector</a> which describes a early warning
+												mechanism
+												to identify customers who are at risk of churn using K-Means clustering
+												technique &amp; JRip rule based algorithm.</li><br>
+											<li>
+												Machine learning based churn prediction models requires lot of manual
+												effort
+												in
+												feature engineering stage, A. B. Adeyemo also published a paper on <a
+													style="color: black;"
+													href="https://arxiv.org/ftp/arxiv/papers/1912/1912.11346.pdf">Customer
+													Churn
+													Prediction using Artificial Neural Networks</a> which eliminates the
+												need of
+												manual feature engineering for churn analysis.
+											</li><br>
+											<p>The results show an
+												accuracy of
+												97.53% and ROC of 0.89.</p>
+										</ul>
+
+										<li class="subheadli">
+											<h3 class="txtShadow">Additional Resources: Datasets And Example Tutorials
+											</h3>
+										</li>
+										<p>A few publicly available datasets and tutorials are briefly presented here:
+										</p>
+										<ul>
+											<li>
+												<p><a class="bmargin"
+														href="https://www.kaggle.com/adammaus/predicting-churn-for-bank-customers"
+														style="text-decoration: none; font-weight: bold; color: black;">Kaggle:
+														Predicting Churn for Bank Customers:</a> This data set contains
+													details
+													of a bank&#8217;s customers and the target variable is a binary
+													variable
+													reflecting the fact whether the customer left the bank (closed his
+													account)
+													or he continues to be a customer. The raw data contains around
+													10,000
+													rows
+													(customers) and 14 columns (features).</p>
+												<p>Example Tutorial: <a style="color: black;"
+														href="https://www.kaggle.com/kmalit/bank-customer-churn-prediction">Bank
+														Customer Churn Prediction</a></p>
+											</li>
+										</ul>
+										<p>EDA followed by predictive modelling using:
+										<ul class="mylist">
+											<li>Logistic Regression</li>
+											<li>SVM</li>
+											<li>Random Forest</li>
+											<li>XGBoost</li>
+										</ul>
+										</p>
+										<ul>
+											<li>
+												<p><b class="bmargin">Kaggle: <a style="color: black;"
+															href="https://www.kaggle.com/sakshigoyal7/credit-card-customers">Credit
+															Cards Customers Data</a>:</b> This dataset consists of
+													10,000 rows
+													(customers), 18 features. The data is imbalanced with 16.07% of
+													customers
+													who have churned.</p>
+												<p>
+													Example Tutorial: <a style="color: black;"
+														href="https://www.kaggle.com/thomaskonstantin/bank-churn-data-exploration-and-churn-prediction">Bank
+														Churn Data Exploration And Churn Prediction</a>
+												</p>
+												<p>
+													EDA (with up-sampling using SMOTE and PCA) followed by
+													predictive
+													modelling using Random Forest, SVM and AdaBoost. Highest
+													reported
+													accuracy is for Random Forest with 91%.
+												</p>
+											</li>
+										</ul>
+
+										<li class="subheadli">
+											<h3 class="txtShadow">Most Important Churn Related Features In Banking
+												Industry</h3>
+										</li>
+									</ul>
+									<p>The most commonly used features in Bank Customer churn prediction are:</p>
+									<ul>
+										<li><b class="bmargin">Customer Demographic and Personal Data :</b> Gender, Age,
+											Location,
+											Marital Status</li><br>
+										<li><b class="bmargin">Customer Survey/Perception Data :</b> Data quantifying
+											how
+											customer
+											appreciates the services or products. Ex : Rating on services, location
+											convenience, Customer opinion on pricing, etc.,</li><br>
+										<li><b class="bmargin">Customer Account Data (CDD): </b>Credit Score, Balance,
+											Number of
+											Products, Has Credit Card, Estimated Salary,
+											Total Transaction Amount (12 months), Total Transaction Count (12 months)
+										</li><br>
+
+										<li><b class="bmargin">Macro-Economic and Development Indicators :</b> Data
+											related to current
+											economic
+											progress &amp; state of affairs can also play a role on customer behavior.
+										</li>
+									</ul>
+
+									<h2 id="mcs-index">Miscellaneous churn studies</h2>
+									<ul class="list">
+										<li class="subheadli">
+											<h3 class="txtShadow">Paper: Churn Prediction In Mobile Gaming Applications
+												Using
+												Survival Ensembles</h3>
+										</li>
+										<ul class="mylist">
+											<li>Survival analytics will focus more on predicting the approximate time
+												frame in
+												which the customer will churn is likely to churn, but the accuracy of
+												the
+												survival analytics is always questionable when compared to classical
+												approaches.</li>
+											<li>
+												Classical regression and classification based churn prediction models
+												will need
+												good amount of churned users data for them to be able to perform
+												better.
+											</li>
+											<li>
+												This
+												paper ‘<a style="color: black; text-decoration: underline;"
+													href="https://arxiv.org/pdf/1710.02264v1.pdf">Churn Prediction
+													in
+													Mobile Social Games</a>’ talks about an approach called Survival
+												Ensembles
+												bringing together the best of both survival and classical methods, to
+												give
+												highly accurate churn prediction with little data.
+											</li>
+											<li>
+												<p>The paper identifies the probability of customer churning as a
+													function of time
+													(left) and explains the main factors that are causing the churn
+													(right) as show
+													in the following images.</p>
+											</li>
+										</ul>
+
+
+										<p><img style="width: 43% !important;" loading="lazy" class="alignnone size-medium wp-image-4687"
+												src="./images/Probability-of-Churn-with-time-300x236.png"
+												alt="Probability of Churn with time" width="300" height="236"
+												srcset="https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Probability-of-Churn-with-time-300x236.png 300w, https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Probability-of-Churn-with-time.png 685w"
+												sizes="(max-width: 300px) 100vw, 300px" /><img
+												style="margin: 6% 0px !important;width: 43% !important;" loading="lazy"
+												class="alignright wp-image-4688 size-medium"
+												src="./images/Feature-importance-300x134.png"
+												alt="Feature importance" width="300" height="134"
+												srcset="https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Feature-importance-300x134.png 300w, https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Feature-importance.png 725w"
+												sizes="(max-width: 300px) 100vw, 300px" /></p>
+										<p><strong>    Fig.  Probability of Churn with Time     
+												Fig. Feature Importance</strong></p>
+										<br>
+
+										<li class="subheadli">
+											<h3 class="txtShadow">Employee Attrition/churn Can Cause A Loss Of 33% Of The
+												Employee Annual Salary</h3>
+										</li>
+										<p>Other than customer or client churn, Employee
+											attrition/Churn
+											has also been studied using data analytics techniques. <br><br> A <a
+												style="color: black; text-decoration: underline;"
+												href="https://www.benefitnews.com/news/avoidable-turnover-costing-employers-big?brief=00000152-14a7-d1cc-a5fa-7cffccf00000&amp;utm_content=socialflow&amp;utm_campaign=ebnmagazine&amp;utm_source=twitter&amp;utm_medium=social">study</a>
+											by Employee Benefits News on employee retention found that the average
+											cost
+											of
+											losing an employee is a staggering 33% of their annual
+											salary.<br><br>
+											Organizations
+											spend huge investment for training expenses, both in terms of time and
+											money, in
+											order to make an employee a productive member. Therefore, organization
+											incurs
+											substantial loss when a productive employee quits.<br><br> Several
+											studies have
+											been
+											reported that make use of advancement in machine learning and other
+											techniques
+											to predict employee attrition and to understand the key variables that
+											influence
+											turnover<strong> </strong></p><br>
+										<li class="subheadli">
+											<h3 class="txtShadow">Additional Resources: Kaggle Dataset And Churn Analysis
+												Tutorial
+											</h3>
+										</li>
+										<ul class="mylist">
+											<li>
+												<p><b class="bmargin">Employee Attrition (<a style="color: black;"
+															href="https://www.kaggle.com/patelprashant/employee-attrition">Fictional
+															dataset on HR Employee attrition and performance</a>):</b>
+													The HR employee attrition data set, comprising 1470 employees (rows)
+													and 35
+													features (columns).</p>
+												<p>Make use of the following tutorial on the above employee attrition
+													dataset, which
+													provides a detailed churn analysis from scratch.<br><br> The author
+													builds &amp;
+													compares three machine learning models based on algorithms like:
+												<ul class="mylist">
+													<li>Logistic Regression</li>
+													<li>Decision Tree</li>
+													<li>Random Forest</li>
+												</ul>
+												by tackling the data imbalance using
+												few sampling techniques.</p>
+												<p>Example Tutorial: <a
+														style="color: black; text-decoration: underline;"
+														href="https://rpubs.com/FranciscoAlonso/482917">Employee
+														Attrition Analysis
+														using R</a></p>
+											</li>
+										</ul>
+									</ul>
+
+									<h2 id="htpc-index">How to prevent churn</h2>
+									<p>The key to prevent churn is to <a
+											style="color: black; text-decoration: underline;"
+											href="https://www.intellias.com/customer-churn-controlling-using-machine-learning/">Stop
+											customer churn before it even starts</a>. <br><br>Once, the probability of
+										customer
+										churn is calculated using data analytics techniques, the key factors that
+										make
+										customers leave can be assessed, followed by:
+									<ul>
+										<li>targeted loyalty campaigns</li><br>
+										<li>aimed at the segment with the highest chances of attrition</li><br>
+										<li>focus on valuable customers and let go jumpers</li><br>
+										<li>use more flexible marketing</li><br>
+										<li>sales campaigns and change products to cover customer needs</li>
+									</ul>
+									</p>
+									<p>Most common pitfall for businesses around the world is that they think
+										if they
+										have great product or service to offer customer retention will happen
+										naturally
+										and they do not have to put in any additional effort to retain.<br><br>
+										While it
+										maybe
+										true to some extent, it is only works in shorter period, and after a while
+										customers will start leaving you.(read more <a
+											style="color: black; text-decoration: underline;"
+											href="https://www.superoffice.com/blog/good-customer-service-yields-customer-loyalty/">here</a>)
+									</p><br>
+									<p><img style="border:1px solid black;" loading="lazy"
+											class="size-medium wp-image-4689 aligncenter"
+											src="./images/Why-do-customers-leave-a-company-300x146.png"
+											alt="Why do customers leave a company" width="300" height="146"
+											srcset="https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Why-do-customers-leave-a-company-300x146.png 300w, https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Why-do-customers-leave-a-company.png 714w"
+											sizes="(max-width: 300px) 100vw, 300px" /></p>
+									<p style="text-align: center;"><strong>Fig. Why do customers leave a company (<a style="color: black; text-decoration: underline;"
+										href="../../www.superoffice.com/globalassets/blog/2012/12/clip_image003.jpg">Source</a>)
+										</strong>
+									</p><br>
+									<p>A <a style="text-decoration: underline; color: black;"
+											href="https://www.superoffice.com/blog/reduce-customer-churn/">study</a>
+										summarizes the method to improve churn prevention into following list of
+										key
+										points</p>
+									<ul>
+										<li>Analyze why churn occurs</li><br>
+										<li>Engage with your customers (relation marketing through emails, social
+											listening, feedback surveys)</li><br>
+										<li>Educate the customer (free trainings, webinars, video tutorials, and product
+											demos)</li><br>
+										<li>Personalize customer experience</li><br>
+										<li>Know who is at risk (Find out which customers have not been contacted for a
+											while)</li>
+										<li>Offer incentives discounts and special offers</li><br>
+										<li>Target the right audience (better to target those who appreciate the
+											long-term value of products)</li><br>
+										<li>Give outstanding customer service and support</li><br>
+										<li>Pay attention to complaints (Complaints are like tips of the icebergs – they
+											suggest that the bigger part of the problem is hidden from the view).</li>
+										<br>
+										<li>Make your best people deal with cancellations</li><br>
+										<li>Flaunt your competitive advantages (How different are you from your
+											competitors? What makes you stand out? What will your customers lose if they
+											decide to quit?</li><br>
+										<li>Offer long term contracts (extending your customers’ commitment from monthly
+											to yearly etc.,)</li>
+									</ul>
+									<ul class="list">
+										<li class="subheadli">
+											<h3 class="txtShadow">Paper: Managing Churn To Maximize Profits</h3>
+
+										</li>
+										<p>Customer retention strategies typically involve two steps:
+										<ul class="mylist">
+											<li>Ranking customers based on their propensity to churn</li>
+											<li>then offering retention incentives to a subset of customers who are at
+												the
+												top of ranking.</li>
+										</ul> The implicit assumption is
+										that this process would maximize firm&#8217;s profits by targeting customers who
+										are most likely to churn. However, current marketing research and practice aims
+										at maximizing the correct classification of churners and
+										non-churners.<br><br>
+										Profit
+										from targeting a customer depends on:<br><br>
+										<ul class="mylist">
+											<li>
+												a customer&#8217;s propensity to churn
+											</li>
+											<li>
+												his/her spend or value, his/her probability of responding to
+												retention offers, as well as the cost of these offers.
+											</li>
+										</ul>
+										Overall profit of
+										the
+										firm also depends on the number of customers the firm decides to target for its
+										retention campaign. proposes a binary classification based predictive model
+										that
+										identifies the right customers to target considering all the above-mentioned
+										factors. <br><br>And then optimally create retention strategy which leads to, on
+										average,
+										a 115% improvement in profit compared to other methods.</p>
+										<p><img loading="lazy" style="width: 90% !important;" class="aligncenter wp-image-4690 size-large"
+												src="./images/Television-campaign-1024x608.png"
+												alt="Television campaign" width="1024" height="608"
+												srcset="https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Television-campaign-1024x608.png 1024w, https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Television-campaign-300x178.png 300w, https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Television-campaign-768x456.png 768w, https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Television-campaign-1080x641.png 1080w, https://www.perceptive-analytics.com/wp-content/uploads/2022/02/Television-campaign.png 1097w"
+												sizes="(max-width: 1024px) 100vw, 1024px" /></p>
+										<p style="text-align: right;padding-right: 40px !important;"><strong>Fig. Study1: Television Campaign      </strong><strong>Fig. Study 2: Special Interest Organization
+												Campaign</strong></p><br>
+										<p>The above figure describes how in both the studies the approach proposed in
+											the
+											paper (Profit Loss) is achieving better profitability compared to other
+											approaches.
+										<ul class="mylist">
+											<li><b class="bmargin">Study 1: </b>
+												<p>
+													We can notice the profitability of
+													suggested
+													approach is maximum at target size of 60%. The straight dashed line
+													is the
+													average profitability when our target size is 100%.
+												</p>
+											</li>
+
+										</ul>
+										<p>A successful customer retention strategy is very important to the overall
+											success
+											of any business. It can save valuable resources, can reap better
+											profits, gain
+											customer loyalty, word of mouth marketing, higher referrals, larger repeat
+											business transactions and much more.</p>
+										</p>
+									</ul>
+
+
+									<h2 id="c-index">Conclusion</h2>
+									<p>From all this following conclusions can be made:</p>
+									<ul class="myli">
+										<li>
+											<p>With immense digitization of businesses across the world consumers have
+												access to
+												several service providers. In such a competitive environment it takes a
+												lot
+												of
+												effort &amp; resources to acquire new customers.</p>
+										</li><br>
+										<li>
+											<p>
+												Also cost to
+												the
+												customer for
+												switching service provider are gradually decreasing which leads to
+												higher churn
+												rates.
+											</p>
+										</li><br>
+										<li>
+											<p>
+												An effective churn analysis mechanism to identify the
+												customers
+												who are
+												at risk of churn, understanding the reasons that are causing customer
+												churn
+												and
+												adopting  a proactive customer retention strategies to prevent churn is
+												very
+												crucial to the performance of any business.
+											</p>
+										</li><br>
+										<li>
+											<p>
+												We can predict churn by analyzing behavioral and transactional data of
+												customers.
+												Mining their data, to find patterns that are specific to customers who
+												have
+												already churned, can help you identify those customers, who are likely
+												to churn.
+											</p>
+										</li><br>
+										<li>
+											<p>
+												In order for a firm to increase the retention rate and reduce the churn
+												rate,
+												the firm has to focus on the customer satisfaction and making user
+												interactions
+												(transaction attributes), more user friendly and hassle free for its
+												customers.
+											</p>
+										</li><br>
+										<li>
+											<p>
+												Churn prediction can be used within your business. It is one of the key
+												components, which in conjunction with lifetime value of customers (CLV)
+												can help you take marketing decisions that is customized at a customer
+												level.
+											</p>
+										</li><br>
+										<li>
+											<p>
+												One can compare churn rates in different customer segments (high CLV
+												segment and
+												low CLV segment), and in turn we can take customized decisions to retain
+												highly
+												profitable customers and also not to spend more than required resources
+												on
+												retaining customers who are least profitable to the business.
+											</p>
+										</li>
+									</ul>
+
+
+									<h2 id="b-index">Bibliography</h2>
+									<ul class="list">
+										<li class="subheadli">
+											<h3 class="txtShadow">Sources:</h3>
+										</li>
+
+										<ul>
+											<li>
+												<p>Ahmad, Abdelrahim Kasem. 2019. “Customer churn prediction in telecom
+													using
+													machine learning in big data platform.” <em>Journal of Big Data</em>
+													6
+													(1).</p>
+											</li><br>
+											<li>
+												<p>Ahmed, Mehreen, and Hammad Afzal. 2017. “A survey of evolution in
+													predictive
+													models and impacting factors in customer churn.” <em>{Advances in
+														Data
+														Science
+														and Adaptive Analysis</em> 9 (3).</p>
+											</li><br>
+											<li>
+												<p>Debjyoti, Adhikary. 2020. “Applying over 100 classifiers for churn
+													prediction in
+													telecom companies.” <em>Multimedia Tools and Applications</em>.</p>
+											</li><br>
+											<li>
+												<p>Gallo, Amy. n.d. “The Value of Keeping the Right Customers.” Harvard
+													Business
+													Review. Accessed 3 28, 2014.
+													https://hbr.org/2014/10/the-value-of-keeping-the-right-customers.
+												</p>
+											</li><br>
+											<li>
+												<p>Hadden, John. 2006. “Churn prediction: Does technology matter.”
+													<em>International
+														Journal of Intelligent Technology</em> 1 (2).
+												</p>
+											</li><br>
+											<li>
+												<p>Jain, Hemlata. 2020. “Telecom churn prediction and used techniques,
+													datasets and
+													performance measures: a review.” <em>Telecommunication Systems</em>.
+												</p>
+											</li><br>
+											<li>
+												<p>Levis, Bill. n.d. “2018 Fundraising Effectiveness Survey Report.”
+													Accessed 3 28,
+													2021. <br>
+													<u>https://afpfep.org/wp-content/uploads/2018/04/2018-Fundraising-Effectiveness-Survey-Report.pdf</u>.
+												</p>
+											</li><br>
+											<li>
+												<p>Nath, Shyam V. 2003. “Customer churn analysis in the wireless
+													industry: A
+													data
+													mining approach.” <em>Proceedings-annual meeting of the decision
+														sciences
+														institute}</em> 561.</p>
+											</li><br>
+											<li>
+												<p>Shewan, D. n.d. “How to Calculate (And Lower!) Your Customer Churn
+													Rate.”
+													Accessed 3 28, 2021.
+													<u>https://www.wordstream.com/blog/ws/2014/05/12/customer-churn</u>.
+												</p>
+											</li><br>
+											<li>
+												<p>Steven H. Noble, Shopify Engineering 2011. <a
+														style="color: black; text-decoration: underline;"
+														href="https://shopify.engineering/defining-churn-rate-no-really-this-actually-requires-an-entire-blog-post">https://shopify.engineering/defining-churn-rate-no-really-this-actually-requires-an-entire-blog-post</a>
+												</p>
+											</li><br>
+										</ul>
+
+										<li class="subheadli">
+											<h3 class="txtShadow">Comments :</h3>
+										</li>
+										<ul>
+
+											<li><a style="color: black; text-decoration: underline;"
+													href="https://clevertap.com/blog/churn-rate/">CleverTap Article on
+													APP
+													Churn (Add It)</a></li>
+										</ul>
+
+										<li class="subheadli">
+											<h3 class="txtShadow">References:</h3>
+										</li>
+										<ul class="mylist">
+
+											<li><a style="color: black; text-decoration:underline;"
+													href="https://hbr.org/2014/10/the-value-of-keeping-the-right-customers">https://hbr.org/2014/10/the-value-of-keeping-the-right-customers</a>
+											</li><br>
+											<li><a style="color: black; text-decoration:underline;"
+													href="http://www2.bain.com/Images/BB_Prescription_cutting_costs.pdf">http://www2.bain.com/Images/BB_Prescription_cutting_costs.pdf</a>
+											</li><br>
+											<li><a style="color: black; text-decoration:underline;"
+													href="https://www.netigate.net/articles/customer-satisfaction/customer-churn-meaning/">https://www.netigate.net/articles/customer-satisfaction/customer-churn-meaning/</a>
+											</li>
+										</ul>
+								</div>
+								<!-- .entry-content -->
+
+							</article>
+							<!-- .et_pb_post -->
+
+						</div>
+						<!-- #left-area -->
+						<div class="reachtop" style="width: 55px !important;position: fixed;
+						bottom: 5px;
+						right: 1px;display: none;">
+							<a href="javascript:void(0);" onclick="scrollToSection('secindex')">
+								<img src="./images/up.png" alt="reach to top">
+							</a>
+						</div>
+						<div id="sidebar" style="width: 15%;padding: 0px !important;">
+							<div id="search-2" class="et_pb_widget widget_search">
+								<form role="search" method="get" id="searchform" class="searchform"
+									action="https://www.perceptive-analytics.com/">
+									<div style="font-size: 20px !important;line-height: 0px !important;">
+										<label class="screen-reader-text" for="s">Search for:</label>
+										<input type="text" value="" name="s" id="s"
+											style="border: 1px solid black;height: 25px !important;" />
+										<input type="submit" id="searchsubmit" value="" style="
+										border: 1px solid black;border-left: white;height: 25px !important;
+										background: #ffffff;
+										background-image: url(./images/search-solid.svg); background-repeat: no-repeat;     background-position-x: 40px;
+    background-size: 21px;
+    background-position-y: center;" />
+									</div>
+								</form>
+							</div> <!-- end .et_pb_widget -->
+							<div id="recent-posts-2" class="et_pb_widget widget_recent_entries mywidget">
+								<h4 class="widgettitle">Recent Posts</h4>
+								<ul>
+									<li>
+										<a href="https://www.perceptive-analytics.com/customer/">Customer</a>
+									</li>
+									<li>
+										<a
+											href="https://www.perceptive-analytics.com/reduced-load-time-tableau-workbook-multiple-sheet-filter/">How
+											We Reduced 99.8% Load Time For A Tableau Workbook With A Multiple Sheet
+											Filter?</a>
+									</li>
+									<li>
+										<a
+											href="https://www.perceptive-analytics.com/reduced-load-time-tableau-workbook-112-million-string-calcs/">How
+											we reduced 99.6% in load time of a Tableau Workbook with 112 million string
+											Calcs?</a>
+									</li>
+									<li>
+										<a
+											href="https://www.perceptive-analytics.com/create-groups-efficiently-in-tableau/">How
+											to Create Groups Efficiently in Tableau?</a>
+									</li>
+									<li>
+										<a
+											href="https://www.perceptive-analytics.com/how-to-reduce-load-time-tableau-viz-used-multiple-conditions/">How
+											we Reduced 98.9% Load Time for a Tableau Viz that used Multiple OR
+											Conditions?</a>
+									</li>
+								</ul>
+
+							</div> <!-- end .et_pb_widget -->
+							<div id="recent-comments-2" class="et_pb_widget widget_recent_comments mywidget">
+								<h4 class="widgettitle">Recent Comments</h4>
+								<ul id="recentcomments">
+									<li class="recentcomments"><span class="comment-author-link"><a
+												href='http://www.data-mania.com/blog/customer-profiling-and-segmentation-in-ecommerce/'
+												rel='external nofollow ugc' class='url'>Customer Profiling and
+												Segmentation in Ecommerce - Data-Mania, LLC</a></span> on <a
+											href="https://www.perceptive-analytics.com/marketing-analytics-companies/#comment-138">Marketing
+											Analytics Services</a></li>
+									<li class="recentcomments"><span class="comment-author-link"><a
+												href='http://www.data-mania.com/blog/visitor-relationship-management/'
+												rel='external nofollow ugc' class='url'>Visitor Relationship Management
+												(VRM) | Like CRM for Website Visitors</a></span> on <a
+											href="https://www.perceptive-analytics.com/marketing-analytics-companies/#comment-137">Marketing
+											Analytics Services</a></li>
+									<li class="recentcomments"><span class="comment-author-link"><a
+												href='http://www.data-mania.com/blog/market-basket-analysis-in-excel/'
+												rel='external nofollow ugc' class='url'>Cross-selling and Market Basket
+												Analysis in Excel: An Overview &amp; Demo</a></span> on <a
+											href="https://www.perceptive-analytics.com/marketing-analytics-companies/#comment-133">Marketing
+											Analytics Services</a></li>
+									<li class="recentcomments"><span class="comment-author-link"><a
+												href='http://www.bcmtouring.com/forum/living-india-f79/jobs-thread-looking-job-have-job-position-post-here-t36237-20/#post873481'
+												rel='external nofollow ugc' class='url'>Jobs thread : Looking for job or
+												have a job position? Post here. - Page 20 - BCMTouring</a></span> on <a
+											href="https://www.perceptive-analytics.com/excel-jobs-hyderabad/#comment-16">Excel
+											Jobs</a></li>
+									<li class="recentcomments"><span class="comment-author-link"><a
+												href='http://news.money.ca/2013/07/22/perceptive-analytics-a-data-analytics-company-wins-clasp-as-a-client-announces-foray-into-web-analytics-consulting-services/'
+												rel='external nofollow ugc' class='url'>Perceptive Analytics, a Data
+												Analytics Company, Wins CLASP as a Client; Announces Foray into Web
+												Analytics Consulting Services</a></span> on <a
+											href="https://www.perceptive-analytics.com/data-visualization-designer/#comment-4">We
+											Create Data Visualizations to Unlock the Potential of Your data</a></li>
+								</ul>
+							</div> <!-- end .et_pb_widget -->
+							<div id="archives-2" class="et_pb_widget widget_archive mywidget">
+								<h4 class="widgettitle">Archives</h4>
+								<ul>
+									<li><a href='https://www.perceptive-analytics.com/2022/07/'>July 2022</a></li>
+									<li><a href='https://www.perceptive-analytics.com/2022/05/'>May 2022</a></li>
+									<li><a href='https://www.perceptive-analytics.com/2022/04/'>April 2022</a></li>
+									<li><a href='https://www.perceptive-analytics.com/2022/03/'>March 2022</a></li>
+									<li><a href='https://www.perceptive-analytics.com/2021/01/'>January 2021</a></li>
+									<li><a href='https://www.perceptive-analytics.com/2018/10/'>October 2018</a></li>
+									<li><a href='https://www.perceptive-analytics.com/2018/08/'>August 2018</a></li>
+									<li><a href='https://www.perceptive-analytics.com/2018/07/'>July 2018</a></li>
+									<li><a href='https://www.perceptive-analytics.com/2017/10/'>October 2017</a></li>
+									<li><a href='https://www.perceptive-analytics.com/2017/03/'>March 2017</a></li>
+									<li><a href='https://www.perceptive-analytics.com/2017/01/'>January 2017</a></li>
+									<li><a href='https://www.perceptive-analytics.com/2016/10/'>October 2016</a></li>
+									<li><a href='https://www.perceptive-analytics.com/2016/05/'>May 2016</a></li>
+									<li><a href='https://www.perceptive-analytics.com/2016/03/'>March 2016</a></li>
+									<li><a href='https://www.perceptive-analytics.com/2016/01/'>January 2016</a></li>
+									<li><a href='https://www.perceptive-analytics.com/2015/04/'>April 2015</a></li>
+									<li><a href='https://www.perceptive-analytics.com/2015/03/'>March 2015</a></li>
+									<li><a href='https://www.perceptive-analytics.com/2014/07/'>July 2014</a></li>
+									<li><a href='https://www.perceptive-analytics.com/2013/10/'>October 2013</a></li>
+									<li><a href='https://www.perceptive-analytics.com/2013/09/'>September 2013</a></li>
+									<li><a href='https://www.perceptive-analytics.com/2013/08/'>August 2013</a></li>
+									<li><a href='https://www.perceptive-analytics.com/2013/06/'>June 2013</a></li>
+									<li><a href='https://www.perceptive-analytics.com/2011/11/'>November 2011</a></li>
+									<li><a href='https://www.perceptive-analytics.com/2011/05/'>May 2011</a></li>
+									<li><a href='https://www.perceptive-analytics.com/2011/04/'>April 2011</a></li>
+								</ul>
+
+							</div> <!-- end .et_pb_widget -->
+							<div id="categories-2" class="et_pb_widget widget_categories mywidget">
+								<h4 class="widgettitle">Categories</h4>
+								<ul>
+									<li class="cat-item cat-item-36"><a
+											href="https://www.perceptive-analytics.com/category/analytics/">Analytics</a>
+									</li>
+									<li class="cat-item cat-item-58"><a
+											href="https://www.perceptive-analytics.com/category/business-model-2/">Business
+											Model</a>
+									</li>
+									<li class="cat-item cat-item-39"><a
+											href="https://www.perceptive-analytics.com/category/business-model/">Business
+											Model</a>
+									</li>
+									<li class="cat-item cat-item-65"><a
+											href="https://www.perceptive-analytics.com/category/tableau-authority/tableau-casestudy/"
+											title="Our recent works on Tableau are listed here. Use contact form to reach us.">Case-studies</a>
+									</li>
+									<li class="cat-item cat-item-179"><a
+											href="https://www.perceptive-analytics.com/category/comic/">Comic</a>
+									</li>
+									<li class="cat-item cat-item-178"><a
+											href="https://www.perceptive-analytics.com/category/comics/">Comics</a>
+									</li>
+									<li class="cat-item cat-item-46"><a
+											href="https://www.perceptive-analytics.com/category/ecommerce/">Ecommerce</a>
+									</li>
+									<li class="cat-item cat-item-41"><a
+											href="https://www.perceptive-analytics.com/category/financial-services/">Financial
+											Services</a>
+									</li>
+									<li class="cat-item cat-item-70"><a
+											href="https://www.perceptive-analytics.com/category/tableau-authority/resources/listofblogs/"
+											title="We bring you best of the blogs written and followed by Tableau and Data Visualization experts">List
+											of Blogs</a>
+									</li>
+									<li class="cat-item cat-item-44"><a
+											href="https://www.perceptive-analytics.com/category/marketing/">Marketing</a>
+									</li>
+									<li class="cat-item cat-item-194"><a
+											href="https://www.perceptive-analytics.com/category/or-condition/">OR
+											Condition</a>
+									</li>
+									<li class="cat-item cat-item-109"><a
+											href="https://www.perceptive-analytics.com/category/r/">R</a>
+									</li>
+									<li class="cat-item cat-item-67"><a
+											href="https://www.perceptive-analytics.com/category/tableau-authority/resources/"
+											title="Best learning resources on Tableau">Resources</a>
+									</li>
+									<li class="cat-item cat-item-48"><a
+											href="https://www.perceptive-analytics.com/category/retail/">Retail</a>
+									</li>
+									<li class="cat-item cat-item-49"><a
+											href="https://www.perceptive-analytics.com/category/sales/">Sales</a>
+									</li>
+									<li class="cat-item cat-item-1"><a
+											href="https://www.perceptive-analytics.com/category/spreadsheet-modelling/">Spreadsheet
+											Modelling</a>
+									</li>
+									<li class="cat-item cat-item-50"><a
+											href="https://www.perceptive-analytics.com/category/strategy/">Strategy</a>
+									</li>
+									<li class="cat-item cat-item-59"><a
+											href="https://www.perceptive-analytics.com/category/supply-chain-2/">Supply
+											Chain</a>
+									</li>
+									<li class="cat-item cat-item-60"><a
+											href="https://www.perceptive-analytics.com/category/tableau-authority/"
+											title="Welcome to Tableau Authority, we share the best resources
+and articles on Tableau and Data Visualizations.">Tableau Authority</a>
+									</li>
+									<li class="cat-item cat-item-62"><a
+											href="https://www.perceptive-analytics.com/category/uncategorized/">Uncategorized</a>
+									</li>
+									<li class="cat-item cat-item-63"><a
+											href="https://www.perceptive-analytics.com/category/visualization/">Visualization</a>
+									</li>
+									<li class="cat-item cat-item-180"><a
+											href="https://www.perceptive-analytics.com/category/wisdom/">Wisdom</a>
+									</li>
+								</ul>
+
+							</div> <!-- end .et_pb_widget -->
+							<div id="meta-2" class="et_pb_widget widget_meta mywidget">
+								<h4 class="widgettitle">Meta</h4>
+								<ul>
+									<li><a rel="nofollow" href="https://www.perceptive-analytics.com/wp-login.php">Log
+											in</a></li>
+									<li><a href="https://www.perceptive-analytics.com/feed/">Entries feed</a></li>
+									<li><a href="https://www.perceptive-analytics.com/comments/feed/">Comments feed</a>
+									</li>
+
+									<li><a href="https://wordpress.org/">WordPress.org</a></li>
+								</ul>
+
+							</div> <!-- end .et_pb_widget -->
+						</div> <!-- end #sidebar -->
+					</div>
+					<!-- #content-area -->
+				</div>
+				<!-- .container -->
+
+			</div>
+			<!-- #main-content -->
+			<section class="contact section-padding pt-0" id="contact">
+				<div class="container">
+				  <div class="row">
+					
+					<div class="col-lg-6 col-md-6 col-12 myform">
+					  <iframe src="https://fm.addxt.com/form/?vf=1FAIpQLSfcBR7DAEx7Xa7F8fFyDo3gozz-P0UBnRROJenbZOaKckFeRg" width="100%" height="570" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+					</div>
+		  
+					  <div class="mx-auto col-lg-4 col-md-6 col-12">
+						  <h3 class="my-4 pt-4 pt-lg-0">Need help?</h3>
+		  
+						  <!-- <p class="mb-1">+917505460921</p> -->
+		  
+						  <p>
+							  <a href="mailto:saurabhsinghiitism@gmail.com?subject=Let's work together">
+								saurabhsinghiitism@gmail.com
+							  <i class="fas fa-arrow-right custom-icon"></i>
+							  </a>
+						  </p>
+		  
+						  <ul class="social-links mt-2" style="margin-bottom: 0px;">
+							  <!-- <li><a href="https://fb.com/tooplate" rel="noopener" class="fab fa-facebook"></a></li> -->
+							  <li><a href="https://twitter.com/SaurabhSiTarkar" target="_blank" rel="noopener" class="fab fa-twitter"></a></li>
+							  <!-- <li><a href="#" rel="noopener" class="fab fa-instagram"></a></li> -->
+							  <li><a href="https://www.linkedin.com/in/saurabh-iitism/" target="_blank" rel="noopener" class="fab fa-linkedin"></a></li>
+							  <!-- <li><a href="#" rel="noopener" class="fab fa-youtube"></a></li> -->
+						  </ul>
+						  
+						<p class="copyright-text" style="font-size: 1rem;">Copyright &copy; 2023 Saurabh Singh Tarkar</p>
+					  </div>
+		  
+				  </div>
+				</div>
+			  </section>
+			
+	<script>
+		$(window).scroll(function () {
+			$('#left-area').each(function () {
+				var pos = $(this).offset().top;
+
+				var topOfWindow = $(window).scrollTop();
+				if (pos < topOfWindow + 400) {
+					$(this).addClass("slideUp");
+				}
+			});
+		});
+	</script>
+	<script>
+		function scrollToSection(sectionId) {
+			const section = document.getElementById(sectionId);
+			if (section) {
+				const offsetTop = section.getBoundingClientRect().top;
+				const headerOffset = 100;
+				window.scrollBy({ top: offsetTop - headerOffset, behavior: 'smooth' });
+			}
+		}
+	</script>
+
+  <!-- SCRIPTS -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/smoothscroll.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/custom.js"></script>
+ <!-- MAIN CSS -->
+
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+ <link rel="stylesheet" href="css/all.min.css">
+ <link rel="stylesheet" href="css/owl.carousel.min.css">
+ <link rel="stylesheet" href="css/owl.theme.default.min.css">
+</body>
+
+</html>
